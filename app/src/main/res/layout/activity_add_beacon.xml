@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_Bluesky"
+    tools:context=".Activities.AddBeacon">
+
+
+    <RelativeLayout
+        android:id="@+id/Header_addBeacon"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header_addbeacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:text="@string/addBeacon"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/ic_backward" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/big_warp_addBeacon"
+        android:layout_below="@+id/Header_addBeacon"
+        android:layout_marginLeft="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/warp_name_addBeacon"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_name_addbeacon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/sukhumvitset_bold"
+                android:text="@string/name_AddBeacon_Text"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/edit_name_addBeacon"
+                android:layout_toRightOf="@+id/title_name_addbeacon"
+                android:layout_width="match_parent"
+                android:layout_marginRight="16dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_style"
+                android:ems="10"
+                android:fontFamily="@font/sukhumvitset_bold"
+                android:hint="ตั้งชื่อบีคอน"
+                android:layout_centerVertical="true"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    <!--  ======================================================================  -->
+        <RelativeLayout
+            android:id="@+id/wrap_home_addBeacon"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@+id/warp_name_addBeacon"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/warp_title_Name_addBeacon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_home_addBeacon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:text="@string/home_AddBeacon_Text"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/title_home_addBeacon"
+                    app:srcCompat="@drawable/line" />
+            </RelativeLayout>
+
+            <co.lujun.androidtagview.TagContainerLayout
+                android:id="@+id/tag_Other_homeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/warp_title_Name_addBeacon"
+                app:container_enable_drag="false"
+                app:horizontal_interval="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                app:tag_clickable="true"
+                app:vertical_interval="10dp" />
+
+            <LinearLayout
+                android:id="@+id/wrap_Other_homeName"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/tag_Other_homeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Other_homeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:text="@string/Other_AddBeacon_Text"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/edit_Other_homeName"
+                    android:layout_width="288dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@+id/Other_homeName"
+                    android:background="@drawable/button_style"
+                    android:ems="10"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:hint="ตั้งชื่อบ้าน"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/add_other_HomeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tag_style"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="เพิ่ม"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--  ======================================================================  -->
+
+        <RelativeLayout
+            android:id="@+id/wrap_Room_addBeacon"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@+id/wrap_home_addBeacon"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/warp_title_Room_addBeacon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title_Room_addBeacon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sukhumvitset_bold"
+                android:text="@string/room_AddBeacon_Text"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/title_Room_addBeacon"
+                    app:srcCompat="@drawable/line" />
+            </RelativeLayout>
+
+            <co.lujun.androidtagview.TagContainerLayout
+                android:id="@+id/tag_Other_roomName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/warp_title_Room_addBeacon"
+                app:container_enable_drag="false"
+                app:horizontal_interval="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                app:tag_clickable="true"
+                app:vertical_interval="10dp" />
+
+            <LinearLayout
+                android:id="@+id/wrap_Other_RoomName"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/tag_Other_roomName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Other_roomName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:text="@string/Other_AddBeacon_Text"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/edit_Other_roomName"
+                    android:layout_width="288dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@+id/Other_homeName"
+                    android:background="@drawable/button_style"
+                    android:ems="10"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:hint="ตั้งชื่อห้อง"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/add_other_Room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tag_style"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="เพิ่ม"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--  ======================================================================  -->
+        <RelativeLayout
+            android:id="@+id/wrap_Floor_addBeacon"
+            android:layout_below="@+id/wrap_Room_addBeacon"
+            android:layout_marginBottom="12dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/warp_title_Floor_addBeacon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/title_Floor_addBeacon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:text="@string/floor_AddBeacon_Text"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/title_Floor_addBeacon"
+                    app:srcCompat="@drawable/line" />
+            </RelativeLayout>
+
+            <co.lujun.androidtagview.TagContainerLayout
+                android:id="@+id/tag_Other_Floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/warp_title_Floor_addBeacon"
+                app:container_enable_drag="false"
+                app:horizontal_interval="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="8dp"
+                app:tag_clickable="true"
+                app:vertical_interval="10dp" />
+
+            <LinearLayout
+                android:id="@+id/wrap_Other_FloorName"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/tag_Other_Floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Other_FloorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:text="@string/Other_AddBeacon_Text"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/edit_Other_FloorName"
+                    android:layout_width="288dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@+id/Other_homeName"
+                    android:background="@drawable/button_style"
+                    android:ems="10"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:hint="เพิ่มชั้น"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/add_other_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tag_style"
+                    android:fontFamily="@font/sukhumvitset_bold"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="เพิ่ม"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--  ======================================================================  -->
+    </RelativeLayout>
+    <Button
+        android:id="@+id/addBeaconBtn"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/sukhumvitset_bold"
+        android:text="@string/addBeacon"
+        android:textColor="@color/text_orange"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="bg_Bluesky">#5AC8FA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_blue">#40AFDF</color>
+    <color name="text_black">#000000</color>
+    <color name="text_orange">#ED982E</color>
+
+
+    <!--Color in Location page-->
+    <color name="color_kitcen">#25903A</color>
+    <color name="color_living_room">#FF5987</color>
+    <color name="color_bathroom">#5AC8FA</color>
+    <color name="bed_room">#ED982E</color>
+    <color name="working_room">#000000</color>
+
+</resources>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">ProjectBeacon</string>
+    <string name="title_activity_list_beacon">ListBeacon</string>
+
+    <!--login page1-->
+    <string name="title1">MDD.guard</string>
+    <string name="title2">ยินดีต้อนรับ</string>
+    <string name="semi_title1">ห่างไกลโรคเตียงดูด ป้องกันด้วยการเคลื่อนไหว</string>
+    <string name="semi_title2">ใส่ใจสุขภาพจิตที่ดี</string>
+
+    <!--Login page2-->
+    <string name="hint_password">รหัสผ่าน</string>
+    <string name="hint_username">ชื่อผู้ใช้</string>
+    <string name="forget_password">ลืมรหัสผ่าน</string>
+    <string name="login_button">เข้าสู่ระบบ</string>
+    <string name="register">ลงทะเบียน</string>
+
+    <!--Register page-->
+    <string name="hint_email">อีเมล: abcd@HDD.com</string>
+    <string name="hint_phone_number">หมายเลขโทรศัพท์: 0X XXXX XXXX</string>
+    <string name="register_button">ลงทะเบียนใช้งาน</string>
+
+
+    <string name="title_register">สร้างบัญชีผู้ใช้</string>
+    <string name="semi_title_register">ห่างไกลเตียงดูด ป้องกันด้วยการเคลื่อนไหว</string>
+    <string name="birth_date">วันเกิด</string>
+    <string name="build_user">สร้าง</string>
+
+    <string name="title_activity_location">Location</string>
+    <string name="title_location">location</string>
+    <string name="title_beacon">beacon</string>
+    <string name="title_account">ข้อมูลส่วนตัว</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_select_beacon">Select_beacon</string>
+
+    <!--add Beacon page-->
+    <string name="name_AddBeacon_Text">ชื่อ</string>
+    <string name="home_AddBeacon_Text">บ้าน</string>
+    <string name="room_AddBeacon_Text">ห้อง</string>
+    <string name="floor_AddBeacon_Text">ชั้น</string>
+    <string name="Other_AddBeacon_Text">อื่นๆ:</string>
+
+    <string name="create_name">ตั้งชื่อบีคอน</string>
+
+    <string name="addBeacon">เพิ่มบีคอน</string>
+
+</resources>
