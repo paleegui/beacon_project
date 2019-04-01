@@ -39,12 +39,11 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull RecycleViewAdapter.ViewHolder viewHolder, int i) {
-        Beacon beacon = this.beacons.get(i).getBeacon();
-        viewHolder.room_name.setText("ห้องนอน");
-        viewHolder.beacon_name.setText("Beacon "+i);
-
-        viewHolder.ranging.setText("ระยะทาง: "+String.format("%.2f",beacon.getDistance()) +" เมตร");
-
+        TheBeacon beacon = this.beacons.get(i);
+        int number = i+1;
+        viewHolder.room_name.setText(beacon.getRoomName());
+        viewHolder.beacon_name.setText("Beacon "+number);
+        viewHolder.ranging.setText("ระยะทาง: "+String.format("%.2f",beacon.getBeacon().getDistance()) +" เมตร");
     }
 
     @Override
@@ -67,10 +66,10 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             beacon_name = (TextView)itemView.findViewById(R.id.beaconNameID);
             ranging = (TextView)itemView.findViewById(R.id.rangingID);
 
-//
+
 //            editeButton = (Button) itemView.findViewById(R.id.editeButton);
 //            deleteButton = (Button) itemView.findViewById(R.id.deleteButton);
-//
+
 //            editeButton.setOnClickListener(this);
 //            deleteButton.setOnClickListener(this);
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -78,7 +77,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
                 public void onClick(View view) {
                     //go to next screen/ DetailActivity
                     int position = getAdapterPosition();
-//
+
 //                    Grocery grocery = groceryItem.get(position);
 //                    Intent intent = new Intent(context, DetailActivity.class);
 //                    intent.putExtra("name", grocery.getName());

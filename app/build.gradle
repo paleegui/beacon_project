@@ -37,7 +37,7 @@ dependencies {
     //cardView and recycleView lib
     implementation 'androidx.cardview:cardview:1.0.0-beta01'
     implementation 'androidx.recyclerview:recyclerview:1.0.0-beta01'
-    
+
     //object to json lib
     implementation 'com.google.code.gson:gson:2.8.5'
 

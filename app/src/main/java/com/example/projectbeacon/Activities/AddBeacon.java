@@ -2,6 +2,8 @@ package com.example.projectbeacon.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -10,9 +12,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.projectbeacon.Activities.fragment.ListBeacon_fragment;
+import com.example.projectbeacon.Activities.fragment.ShowAll_BeaconList;
 import com.example.projectbeacon.Beacon.TheBeacon;
 import com.example.projectbeacon.Database.DatabaseHandler;
 import com.example.projectbeacon.R;
@@ -86,8 +92,10 @@ public class AddBeacon extends AppCompatActivity {
 
             @Override
             public void onTagLongClick(int position, String text) {
+                String wordDelete = nhome.get(position);
                 nhome.remove(position);
                 mTagContainerLayout1.setTags(nhome);
+                Toast.makeText(getApplicationContext(), wordDelete +" ถูกลบแล้ว", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -124,8 +132,10 @@ public class AddBeacon extends AppCompatActivity {
 
             @Override
             public void onTagLongClick(int position, String text) {
+                String wordDelete = nRoom.get(position);
                 nRoom.remove(position);
                 mTagContainerLayout2.setTags(nRoom);
+                Toast.makeText(getApplicationContext(), wordDelete +" ถูกลบแล้ว", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -161,8 +171,10 @@ public class AddBeacon extends AppCompatActivity {
 
             @Override
             public void onTagLongClick(int position, String text) {
+                String wordDelete = nFloor.get(position);
                 nFloor.remove(position);
                 mTagContainerLayout3.setTags(nFloor);
+                Toast.makeText(getApplicationContext(), wordDelete +" ถูกลบแล้ว", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -175,10 +187,6 @@ public class AddBeacon extends AppCompatActivity {
 
             }
         });
-
-
-
-
     }
 
     public void addBeacon(){
@@ -190,6 +198,7 @@ public class AddBeacon extends AppCompatActivity {
 
     public void onClick(){
         Button addBeacon = (Button)findViewById(R.id.addBeaconBtn);
+        Button previous = (Button)findViewById(R.id.previousToSelect);
         TextView addButtonHomeName = (TextView)findViewById(R.id.add_other_HomeName);
         TextView addButtonRoomName = (TextView)findViewById(R.id.add_other_Room);
         TextView addButtonFloor = (TextView)findViewById(R.id.add_other_floor);
@@ -198,6 +207,12 @@ public class AddBeacon extends AppCompatActivity {
         final EditText newRoomName = (EditText)findViewById(R.id.edit_Other_roomName);
         final EditText newFloor = (EditText)findViewById(R.id.edit_Other_FloorName);
 
+        previous.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AddBeacon.this, Select_beacon.class));
+            }
+        });
 
         addButtonFloor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -234,10 +249,29 @@ public class AddBeacon extends AppCompatActivity {
                         beacon.setHomeName(homeName);
                         beacon.setFloor(floor);
                         db.addBeacon(beacon);
+                        Toast.makeText(getApplicationContext(), "ลงทะเบียนบีคอนแล้ว", Toast.LENGTH_SHORT).show();
                         Log.d("has cliked ", ": ");
+
+                        startActivity(new Intent(AddBeacon.this, Select_beacon.class));
+
                     } else {
                         Log.d("NULL", "Null in addbeacon ");
                         //แจ้งเตือนหรือแสดงข้อความแจ้งเตือน เมื่อกด add แล้วไม่มีชื่อ หรือ ห้อง หรือ ชั้น
+                        String wordException = "คุณยังไม่ได้เลือกหรือใส่";
+                        if(beacon == null){
+                            wordException = wordException+ "ชื่อบีคอน";
+                        }
+                        if(homeName == null){
+                            wordException = wordException+ " ชื่อบ้าน";
+                        }
+                        if(roomName == null){
+                            wordException = wordException+ " ชื่อห้อง";
+                        }
+                        if(floor == null){
+                            wordException = wordException + " ชั้น";
+                        }
+
+                        Toast.makeText(getApplicationContext(), wordException, Toast.LENGTH_SHORT).show();
                     }
                 }
             });

@@ -68,12 +68,11 @@ ShowFloor_BeaconList.OnFragmentInteractionListener, ShowAll_BeaconList.OnFragmen
 
         myPages = (ViewPager)v.findViewById(R.id.myPageList);
 
-        final ViewPager viewPager = (ViewPager)v.findViewById(R.id.myPageList);
         final PageAdapter adapter = new PageAdapter(getFragmentManager(),3);
-        viewPager.setAdapter(adapter);
+        myPages.setAdapter(adapter);
 
 
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        myPages.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int i, float v, int i1) {
 
@@ -92,7 +91,7 @@ ShowFloor_BeaconList.OnFragmentInteractionListener, ShowAll_BeaconList.OnFragmen
         });
 
 
-        viewPager.setOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(myTabs));
+        myPages.setOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(myTabs));
 
         myTabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override

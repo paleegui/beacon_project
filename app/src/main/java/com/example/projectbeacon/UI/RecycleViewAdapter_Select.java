@@ -41,7 +41,7 @@ public class RecycleViewAdapter_Select extends RecyclerView.Adapter<RecycleViewA
     public void onBindViewHolder(@NonNull RecycleViewAdapter_Select.ViewHolder viewHolder, int i) {
         Beacon beacon = this.beacons.get(i);
 
-        viewHolder.beacon_name.setText("iBeacon'");
+        viewHolder.beacon_name.setText(""+beacon.getBluetoothName());
         viewHolder.UUID.setText(""+beacon.getId1());
         viewHolder.major.setText("Major "+beacon.getId2());
         viewHolder.minor.setText("Minor "+beacon.getId3());

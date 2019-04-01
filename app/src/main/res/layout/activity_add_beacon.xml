@@ -26,6 +26,7 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/previousToSelect"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginLeft="32dp"
@@ -135,8 +136,8 @@
 
                 <EditText
                     android:id="@+id/edit_Other_homeName"
-                    android:layout_width="288dp"
-                    android:layout_height="40dp"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="8dp"
                     android:layout_toRightOf="@+id/Other_homeName"
@@ -226,8 +227,8 @@
 
                 <EditText
                     android:id="@+id/edit_Other_roomName"
-                    android:layout_width="288dp"
-                    android:layout_height="40dp"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="8dp"
                     android:layout_toRightOf="@+id/Other_homeName"
@@ -315,8 +316,8 @@
 
                 <EditText
                     android:id="@+id/edit_Other_FloorName"
-                    android:layout_width="288dp"
-                    android:layout_height="40dp"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="8dp"
                     android:layout_toRightOf="@+id/Other_homeName"
