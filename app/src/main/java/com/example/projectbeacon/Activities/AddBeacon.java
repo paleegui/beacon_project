@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -28,12 +30,14 @@ import co.lujun.androidtagview.TagView;
 public class AddBeacon extends AppCompatActivity {
     private TheBeacon beacon;
     private DatabaseHandler db;
-    private String homeName,roomName;
-    private int floor;
-    private View.OnClickListener view;
+    private String homeName,roomName,floor;
     private TagContainerLayout mTagContainerLayout1;
     private TagContainerLayout mTagContainerLayout2;
     private TagContainerLayout mTagContainerLayout3;
+
+    private List<String> nFloor;
+    private List<String> nhome;
+    private List<String> nRoom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +45,11 @@ public class AddBeacon extends AppCompatActivity {
         setContentView(R.layout.activity_add_beacon);
 
         db = new DatabaseHandler(this);
-        Intent intent = getIntent();
-
-
+        onClick();
         tapClick();
+
+        Intent intent = getIntent();
         this.beacon = (TheBeacon) intent.getSerializableExtra("beacon");
-
-
 
 
     }
@@ -68,7 +70,7 @@ public class AddBeacon extends AppCompatActivity {
        // mTagContainerLayout1.setTagTypeface(typeface);
 
         //list default home name
-        final List<String> nhome = new ArrayList<>();
+        nhome = new ArrayList<>();
         nhome.add("Rattapon's Home"); nhome.add("neay's Home"); nhome.add("AOFFO's Home"); nhome.add("Piyada's Home");
 
         //set color
@@ -78,11 +80,14 @@ public class AddBeacon extends AppCompatActivity {
             @Override
             public void onTagClick(int position, String text) {
                     homeName = text;
+                    Log.d("ontap", "onTagClick: "+homeName);
+                    Log.d("ontap", "position: "+position);
             }
 
             @Override
             public void onTagLongClick(int position, String text) {
                 nhome.remove(position);
+                mTagContainerLayout1.setTags(nhome);
             }
 
             @Override
@@ -104,7 +109,7 @@ public class AddBeacon extends AppCompatActivity {
         //set font
        // mTagContainerLayout2.setTagTypeface(typeface);
         //list default home name
-        final List<String> nRoom = new ArrayList<>();
+        nRoom = new ArrayList<>();
         nRoom.add("ห้องน้ำ"); nRoom.add("ห้องนอน"); nRoom.add("ห้องนั่งเล่น"); nRoom.add("ห้องทำงาน"); nRoom.add("ห้องครัว");
 
         //set color
@@ -113,11 +118,14 @@ public class AddBeacon extends AppCompatActivity {
             @Override
             public void onTagClick(int position, String text) {
                 roomName = text;
+                Log.d("ontap", "onTagClick: "+roomName);
+                Log.d("ontap", "position: "+position);
             }
 
             @Override
             public void onTagLongClick(int position, String text) {
                 nRoom.remove(position);
+                mTagContainerLayout2.setTags(nRoom);
             }
 
             @Override
@@ -138,7 +146,7 @@ public class AddBeacon extends AppCompatActivity {
         //set font
        // mTagContainerLayout3.setTagTypeface(typeface);
         //list default home name
-        final List<String> nFloor = new ArrayList<>();
+        nFloor = new ArrayList<>();
         nFloor.add("1"); nFloor.add("2"); nFloor.add("3"); nFloor.add("4"); nFloor.add("5");
 
         //set color
@@ -146,12 +154,15 @@ public class AddBeacon extends AppCompatActivity {
         mTagContainerLayout3.setOnTagClickListener(new TagView.OnTagClickListener() {
             @Override
             public void onTagClick(int position, String text) {
-                floor = Integer.parseInt(text);
+                floor = text;
+                Log.d("ontap", "onTagClick: "+floor);
+                Log.d("ontap", "position: "+position);
             }
 
             @Override
             public void onTagLongClick(int position, String text) {
                 nFloor.remove(position);
+                mTagContainerLayout3.setTags(nFloor);
             }
 
             @Override
@@ -178,28 +189,59 @@ public class AddBeacon extends AppCompatActivity {
     }
 
     public void onClick(){
+        Button addBeacon = (Button)findViewById(R.id.addBeaconBtn);
         TextView addButtonHomeName = (TextView)findViewById(R.id.add_other_HomeName);
         TextView addButtonRoomName = (TextView)findViewById(R.id.add_other_Room);
         TextView addButtonFloor = (TextView)findViewById(R.id.add_other_floor);
 
-        EditText newHomeName = (EditText)findViewById(R.id.edit_Other_homeName);
-        EditText newRoomName = (EditText)findViewById(R.id.edit_Other_roomName);
-        EditText newFloor = (EditText)findViewById(R.id.edit_Other_FloorName);
+        final EditText newHomeName = (EditText)findViewById(R.id.edit_Other_homeName);
+        final EditText newRoomName = (EditText)findViewById(R.id.edit_Other_roomName);
+        final EditText newFloor = (EditText)findViewById(R.id.edit_Other_FloorName);
 
-
-        addButtonRoomName.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         addButtonFloor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                nFloor.add(newFloor.getText().toString());
+                mTagContainerLayout3.setTags(nFloor);
+                newFloor.setText("");
             }
         });
 
+        addButtonRoomName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nRoom.add(newRoomName.getText().toString());
+                mTagContainerLayout2.setTags(nRoom);
+                newRoomName.setText("");
+            }
+        });
+
+        addButtonHomeName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nhome.add(newHomeName.getText().toString());
+                mTagContainerLayout1.setTags(nhome);
+                newHomeName.setText("");
+            }
+        });
+
+            addBeacon.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (homeName != null && roomName != null && floor != null) {
+                        beacon.setRoomName(roomName);
+                        beacon.setHomeName(homeName);
+                        beacon.setFloor(floor);
+                        db.addBeacon(beacon);
+                        Log.d("has cliked ", ": ");
+                    } else {
+                        Log.d("NULL", "Null in addbeacon ");
+                        //แจ้งเตือนหรือแสดงข้อความแจ้งเตือน เมื่อกด add แล้วไม่มีชื่อ หรือ ห้อง หรือ ชั้น
+                    }
+                }
+            });
     }
+
+
 }

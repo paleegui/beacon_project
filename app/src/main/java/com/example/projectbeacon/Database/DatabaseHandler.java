@@ -36,6 +36,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + Constants.KEY_FLOOR + " INTEGER);";
         db.execSQL(CREATE_BEACON_TABLE);
 
+        Log.d("In Database ","On create");
 //        String CREATE_TABLE = "CREATE TABLE "
 //                + Constants.TABLE_NAME + "("
 //                + Constants.KEY_ID + " INTEGER PRIMARY KEY,"

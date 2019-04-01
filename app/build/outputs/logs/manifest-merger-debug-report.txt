@@ -1,0 +1,325 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:2:1-44:12
+MERGED from [com.google.android.material:material:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/material-1.0.0-beta01.aar/0c3cb4def1fcb363075f98d5efadf057/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.1.aar/18f677296910e033db452b1da603b5ce/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/69809b6d4b19571a4ae8a25681615ed8/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0-beta01.aar/a5426fa5b86dc860650c7fba0af69265/AndroidManifest.xml:17:1-22:12
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:2:1-58:12
+MERGED from [androidx.cardview:cardview:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0-beta01.aar/e985e337ce18e53f6c49bd24bff3f330/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0-beta01.aar/8e0b5bb9dabf757309248b3373bfebc4/AndroidManifest.xml:17:1-22:12
+MERGED from [co.lujun:androidtagview:1.1.7] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/androidtagview-1.1.7.aar/0ca3fce37fe8239995634aa3e1cd2d6d/AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/357ee9f41ff706fd9ad4bf64d3936110/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/72d24c597168f86b98135856cea036e5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/73979c5dce3c7dba7127533f038d1a66/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/d44be5e8ddd966a6eff60081c69f1acd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.1.aar/7bb8105145bb158c6983a6000f7d54bd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/transition-1.0.0-beta01.aar/c610dde5471d05fca1a7f0d1b70b7498/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/916a0f7a9f8d1893d5b12b0cb3d6986e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/29e17809bc58508eb4dd6b73345f60b2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/15a029e366ea75243e2453e2eda80f2f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/f444f31b77d2a694b96ff53933407ddf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/e88394d9cf4c9acb214c5ae4ae12f3a5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/b3f4414bf5095b242c60bce7f35873dd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/3af1a12c758d0db3612a9ba45b78a0f9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/08e9b760b36cb619dd6463f30ee5c234/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/b5ff21f7ead990b9f524c75d6fcabc2a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/3c496b2e2fa74098f30fdc4694a855c4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/f4ca14e5657d5e6014c0a840a4c168c0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/2e0d4776253e6d58aeb33cf46633e6a8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/4c3ff9d32562b322e565d51160b063f1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/fe4d20115eb194dee8fc07ffa340684f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/1ad2e614d7e9a4b5caf733aeb08193b9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/933536369cb37a1367311e737ab143f7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/fd4631e1c7867c81e3d476979b5be301/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/72d5b4b3c77b7e80a3761181d067bcd9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/5ee14b20618a91c061d84a0ff039ad14/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/08c3c345c07641ca3d34d19b28dc4d58/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/a09b2eccb23e39416aec0c70092a6adc/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:2:1-44:12
+	package
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:4:5-40
+		INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:2:1-44:12
+		INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:2:1-44:12
+		INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:6:22-74
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:8:5-68
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:11:5-13:36
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:8:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:9:5-74
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:14:5-16:36
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:9:22-71
+application
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:11:5-42:19
+MERGED from [com.google.android.material:material:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/material-1.0.0-beta01.aar/0c3cb4def1fcb363075f98d5efadf057/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/material-1.0.0-beta01.aar/0c3cb4def1fcb363075f98d5efadf057/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/69809b6d4b19571a4ae8a25681615ed8/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/69809b6d4b19571a4ae8a25681615ed8/AndroidManifest.xml:9:5-20
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:20:5-56:19
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:20:5-56:19
+MERGED from [co.lujun:androidtagview:1.1.7] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/androidtagview-1.1.7.aar/0ca3fce37fe8239995634aa3e1cd2d6d/AndroidManifest.xml:11:5-12:19
+MERGED from [co.lujun:androidtagview:1.1.7] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/androidtagview-1.1.7.aar/0ca3fce37fe8239995634aa3e1cd2d6d/AndroidManifest.xml:11:5-12:19
+MERGED from [androidx.core:core:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/3c496b2e2fa74098f30fdc4694a855c4/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/3c496b2e2fa74098f30fdc4694a855c4/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/f4ca14e5657d5e6014c0a840a4c168c0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/f4ca14e5657d5e6014c0a840a4c168c0/AndroidManifest.xml:22:5-23:19
+	android:supportsRtl
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:15:9-41
+	android:appComponentFactory
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:19:9-64
+		REJECTED from [androidx.core:core:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/3c496b2e2fa74098f30fdc4694a855c4/AndroidManifest.xml:22:18-86
+	android:launchMode
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:16:9-44
+	android:roundIcon
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:17:9-54
+	android:icon
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:21:9-40
+	tools:replace
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:20:9-52
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:12:9-48
+activity#com.example.projectbeacon.Activities.AddBeacon
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:22:9-67
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:22:19-55
+activity#com.example.projectbeacon.Activities.Select_beacon
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:23:9-26:59
+	android:label
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:25:13-65
+	android:theme
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:26:13-56
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:24:13-53
+activity#com.example.projectbeacon.Activities.Main_navigation
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:27:9-29:59
+	android:theme
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:29:13-56
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:28:13-55
+activity#com.example.projectbeacon.Activities.User_Register
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:30:9-32:59
+	android:theme
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:32:13-56
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:31:13-53
+activity#com.example.projectbeacon.Activities.ClinomaniaLogin_1
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:33:9-66
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:33:19-63
+activity#com.example.projectbeacon.Activities.ClinomaniaLogin
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:34:9-64
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:34:19-61
+activity#com.example.projectbeacon.Activities.MainActivity
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:35:9-41:20
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:35:19-58
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:39:27-74
+uses-sdk
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/material-1.0.0-beta01.aar/0c3cb4def1fcb363075f98d5efadf057/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/material-1.0.0-beta01.aar/0c3cb4def1fcb363075f98d5efadf057/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.1.aar/18f677296910e033db452b1da603b5ce/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.1.aar/18f677296910e033db452b1da603b5ce/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/69809b6d4b19571a4ae8a25681615ed8/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/69809b6d4b19571a4ae8a25681615ed8/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0-beta01.aar/a5426fa5b86dc860650c7fba0af69265/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0-beta01.aar/a5426fa5b86dc860650c7fba0af69265/AndroidManifest.xml:20:5-44
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:7:5-9:41
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.cardview:cardview:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0-beta01.aar/e985e337ce18e53f6c49bd24bff3f330/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0-beta01.aar/e985e337ce18e53f6c49bd24bff3f330/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0-beta01.aar/8e0b5bb9dabf757309248b3373bfebc4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0-beta01.aar/8e0b5bb9dabf757309248b3373bfebc4/AndroidManifest.xml:20:5-44
+MERGED from [co.lujun:androidtagview:1.1.7] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/androidtagview-1.1.7.aar/0ca3fce37fe8239995634aa3e1cd2d6d/AndroidManifest.xml:7:5-9:41
+MERGED from [co.lujun:androidtagview:1.1.7] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/androidtagview-1.1.7.aar/0ca3fce37fe8239995634aa3e1cd2d6d/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/357ee9f41ff706fd9ad4bf64d3936110/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/357ee9f41ff706fd9ad4bf64d3936110/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/72d24c597168f86b98135856cea036e5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/72d24c597168f86b98135856cea036e5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/73979c5dce3c7dba7127533f038d1a66/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/73979c5dce3c7dba7127533f038d1a66/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/d44be5e8ddd966a6eff60081c69f1acd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/d44be5e8ddd966a6eff60081c69f1acd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.1.aar/7bb8105145bb158c6983a6000f7d54bd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.1.aar/7bb8105145bb158c6983a6000f7d54bd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/transition-1.0.0-beta01.aar/c610dde5471d05fca1a7f0d1b70b7498/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/transition-1.0.0-beta01.aar/c610dde5471d05fca1a7f0d1b70b7498/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/916a0f7a9f8d1893d5b12b0cb3d6986e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0-beta01] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/media-1.0.0-beta01.aar/916a0f7a9f8d1893d5b12b0cb3d6986e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/29e17809bc58508eb4dd6b73345f60b2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/29e17809bc58508eb4dd6b73345f60b2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/15a029e366ea75243e2453e2eda80f2f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/15a029e366ea75243e2453e2eda80f2f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/f444f31b77d2a694b96ff53933407ddf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/f444f31b77d2a694b96ff53933407ddf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/e88394d9cf4c9acb214c5ae4ae12f3a5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/e88394d9cf4c9acb214c5ae4ae12f3a5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/b3f4414bf5095b242c60bce7f35873dd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/b3f4414bf5095b242c60bce7f35873dd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/3af1a12c758d0db3612a9ba45b78a0f9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/3af1a12c758d0db3612a9ba45b78a0f9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/08e9b760b36cb619dd6463f30ee5c234/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/08e9b760b36cb619dd6463f30ee5c234/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/b5ff21f7ead990b9f524c75d6fcabc2a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/b5ff21f7ead990b9f524c75d6fcabc2a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/3c496b2e2fa74098f30fdc4694a855c4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/3c496b2e2fa74098f30fdc4694a855c4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/f4ca14e5657d5e6014c0a840a4c168c0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/f4ca14e5657d5e6014c0a840a4c168c0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/2e0d4776253e6d58aeb33cf46633e6a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/2e0d4776253e6d58aeb33cf46633e6a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/4c3ff9d32562b322e565d51160b063f1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/4c3ff9d32562b322e565d51160b063f1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/fe4d20115eb194dee8fc07ffa340684f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/fe4d20115eb194dee8fc07ffa340684f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/1ad2e614d7e9a4b5caf733aeb08193b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/1ad2e614d7e9a4b5caf733aeb08193b9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/933536369cb37a1367311e737ab143f7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/933536369cb37a1367311e737ab143f7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/fd4631e1c7867c81e3d476979b5be301/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/fd4631e1c7867c81e3d476979b5be301/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/72d5b4b3c77b7e80a3761181d067bcd9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/72d5b4b3c77b7e80a3761181d067bcd9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/5ee14b20618a91c061d84a0ff039ad14/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/5ee14b20618a91c061d84a0ff039ad14/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/08c3c345c07641ca3d34d19b28dc4d58/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/08c3c345c07641ca3d34d19b28dc4d58/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/a09b2eccb23e39416aec0c70092a6adc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/a09b2eccb23e39416aec0c70092a6adc/AndroidManifest.xml:20:5-44
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:17:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:18:22-78
+receiver#org.altbeacon.beacon.startup.StartupBroadcastReceiver
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:21:9-27:20
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:21:19-87
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED+action:name:android.intent.action.BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:22:13-26:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:23:17-79
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:23:25-76
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:24:17-87
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:24:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:25:17-90
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:25:25-87
+service#org.altbeacon.beacon.service.BeaconService
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:29:9-34:38
+	android:enabled
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:31:13-35
+	android:label
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:34:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:32:13-37
+	android:isolatedProcess
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:33:13-44
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:30:13-70
+service#org.altbeacon.beacon.BeaconIntentProcessor
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:36:13-70
+service#org.altbeacon.beacon.service.ScanJob
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:39:9-48:19
+	android:permission
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:41:13-69
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:40:13-64
+meta-data#immediateScanJobId
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:42:13-44:45
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:44:17-42
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:43:17-50
+meta-data#periodicScanJobId
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:45:13-47:45
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:47:17-42
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:46:17-49
+service#org.altbeacon.bluetooth.BluetoothTestJob
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:49:9-55:19
+	android:permission
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:51:13-69
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:50:13-68
+meta-data#jobId
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:52:13-54:46
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:54:17-43
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] /Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/jetified-android-beacon-library-2.16.1.aar/0ce5578db1fce76ac592c745220eab02/AndroidManifest.xml:53:17-37
