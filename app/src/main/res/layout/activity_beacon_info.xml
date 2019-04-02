@@ -1,9 +1,336 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_Bluesky"
+    android:orientation="vertical"
     tools:context=".Activities.Beacon_info">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:background="@drawable/backgroundBeaconInfo"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/title_select_beacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="9dp">
+
+            <ImageView
+                android:id="@+id/select_icon_beacon"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/beacon_icon" />
+
+            <TextView
+                android:id="@+id/beacon_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/select_icon_beacon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/select_icon_beacon"
+                android:fontFamily="@font/sukhumvitset_bold"
+                android:text="iBeacon"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/RoomName_inCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/sukhumvitset_bold"
+                android:text="ห้องนอน"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/ranging_inCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RoomName_inCard"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/sukhumvitset_text"
+                android:text="ระยะทาง: 30.11 เมตร"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_select_beacon"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="15dp">
+
+            <RelativeLayout
+                android:id="@+id/wrap_UUID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon_UUID"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/UUID_selectText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/icon_UUID"
+                    android:fontFamily="@font/sukhumvitset_medium"
+                    android:text="UUID fda50693-a4e2-4fb1-afcf-c6eb07647825"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wrap_majorANDrssi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wrap_UUID">
+
+                <RelativeLayout
+                    android:id="@+id/wrap_major"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/icon_major"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/major_selectText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/icon_major"
+                        android:fontFamily="@font/sukhumvitset_medium"
+                        android:text="Major 10035"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wrap_RSSI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wrap_major">
+
+                    <ImageView
+                        android:id="@+id/icon_RSSI"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/RSSI_selectText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/icon_RSSI"
+                        android:fontFamily="@font/sukhumvitset_medium"
+                        android:text="RSSI -62 dBm"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wrap_minorANDtx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wrap_UUID"
+                android:layout_marginLeft="64dp"
+                android:layout_toRightOf="@id/wrap_majorANDrssi">
+
+                <RelativeLayout
+                    android:id="@+id/wrap_minor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/icon_minor"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/minor_selectText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/icon_minor"
+                        android:fontFamily="@font/sukhumvitset_medium"
+                        android:text="Minor 56498"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wrap_TX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wrap_minor">
+
+                    <ImageView
+                        android:id="@+id/icon_TX"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/TX_selectText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/icon_TX"
+                        android:fontFamily="@font/sukhumvitset_medium"
+                        android:text="TX -59 dBm"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--===================================+++++=++++++===================================-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_style">
+
+        <TextView
+            android:id="@+id/floorInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="98dp"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:text="ชั้น 1"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:text="ชั้น"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!--===================================+++++=++++++===================================-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_style">
+
+        <TextView
+            android:id="@+id/roomInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="98dp"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:text="ห้องนอน"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:text="ชื่อห้อง"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!--===================================+++++=++++++===================================-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_style">
+
+        <TextView
+            android:id="@+id/homeNameInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="98dp"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:text="My home1"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:text="ชื่อบ้าน"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!--===================================+++++=++++++===================================-->
+
+    <RelativeLayout
+        android:id="@+id/wrap_delete_info"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/deleteIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <TextView
+            android:layout_toRightOf="@+id/deleteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:text="ลบ"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+</LinearLayout>

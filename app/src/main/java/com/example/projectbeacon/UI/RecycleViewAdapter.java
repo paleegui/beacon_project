@@ -4,12 +4,16 @@ import android.app.AlertDialog;
 import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 
+import com.example.projectbeacon.Activities.AddBeacon;
+import com.example.projectbeacon.Activities.Beacon_info;
 import com.example.projectbeacon.Beacon.TheBeacon;
 import com.example.projectbeacon.R;
 
@@ -60,40 +64,24 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
         public ViewHolder(@NonNull View itemView, final Context ctx) {
             super(itemView);
-
             context = ctx;
             room_name = (TextView)itemView.findViewById(R.id.roomNameID);
             beacon_name = (TextView)itemView.findViewById(R.id.beaconNameID);
             ranging = (TextView)itemView.findViewById(R.id.rangingID);
 
-
-//            editeButton = (Button) itemView.findViewById(R.id.editeButton);
-//            deleteButton = (Button) itemView.findViewById(R.id.deleteButton);
-
-//            editeButton.setOnClickListener(this);
-//            deleteButton.setOnClickListener(this);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     //go to next screen/ DetailActivity
                     int position = getAdapterPosition();
-
-//                    Grocery grocery = groceryItem.get(position);
-//                    Intent intent = new Intent(context, DetailActivity.class);
-//                    intent.putExtra("name", grocery.getName());
-//                    intent.putExtra("quantity", grocery.getQuantity());
-//                    intent.putExtra("dateAdded", grocery.getDateItemAdded());
-//                    intent.putExtra("id", grocery.getId());
-//                    context.startActivity(intent);
+                    TheBeacon beacon = beacons.get(position);
+                    Intent intent = new Intent(context, Beacon_info.class);
+                    intent.putExtra("beacon", beacon);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(intent);
 
                 }
             });
-        }
-        public  void byPassActivity(){
-//            DatabaseHandler db = new DatabaseHandler(context);
-//            if(db.getGroceriesCount() <= 0){
-//                context.startActivity(new Intent(context, MainActivity.class));
-//            }
         }
         @Override
         public void onClick(View view) {
