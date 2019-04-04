@@ -263,9 +263,38 @@ public class AddBeacon extends AppCompatActivity {
             addBeacon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    //click for edit
                     if(flag.equals("edit")){
-                        //click for edit
-                        db.updateBeacon(beacon);
+                        if (homeName != null && roomName != null && floor != null) {
+                            beacon.setRoomName(roomName);
+                            beacon.setHomeName(homeName);
+                            beacon.setFloor(floor);
+                            db.updateBeacon(beacon);
+                            Toast.makeText(getApplicationContext(), "บีคอน"+beacon.getBeaconName()+
+                                    " แก้ไขแล้ว", Toast.LENGTH_SHORT).show();
+                            Log.d("has cliked ", ": ");
+
+                            startActivity(new Intent(AddBeacon.this, ShowAll_BeaconList.class));
+
+                        } else {
+                            Log.d("NULL", "Null in addbeacon ");
+                            //แจ้งเตือนหรือแสดงข้อความแจ้งเตือน เมื่อกด add แล้วไม่มีชื่อ หรือ ห้อง หรือ ชั้น
+                            String wordException = "คุณยังไม่ได้เลือกหรือใส่";
+                            if(beacon == null){
+                                wordException = wordException+ "ชื่อบีคอน";
+                            }
+                            if(homeName == null){
+                                wordException = wordException+ " ชื่อบ้าน";
+                            }
+                            if(roomName == null){
+                                wordException = wordException+ " ชื่อห้อง";
+                            }
+                            if(floor == null){
+                                wordException = wordException + " ชั้น";
+                            }
+
+                            Toast.makeText(getApplicationContext(), wordException, Toast.LENGTH_SHORT).show();
+                        }
                     }else if(flag.equals("addBeacon")){
                         //click for add Beacon
                         if (homeName != null && roomName != null && floor != null) {
@@ -276,7 +305,7 @@ public class AddBeacon extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "ลงทะเบียนบีคอนแล้ว", Toast.LENGTH_SHORT).show();
                             Log.d("has cliked ", ": ");
 
-                            startActivity(new Intent(AddBeacon.this, Select_beacon.class));
+                            startActivity(new Intent(AddBeacon.this, ShowAll_BeaconList.class));
 
                         } else {
                             Log.d("NULL", "Null in addbeacon ");
