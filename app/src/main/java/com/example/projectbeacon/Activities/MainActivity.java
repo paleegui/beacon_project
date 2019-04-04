@@ -8,11 +8,18 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Handler;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.example.projectbeacon.Model.Activity;
 import com.example.projectbeacon.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import org.altbeacon.beacon.Beacon;
 import org.altbeacon.beacon.BeaconManager;
@@ -21,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
     protected static final String TAG = "Main Check Permission";
     private static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
     private boolean byPass = false;
+
+    private FirebaseFirestore db;
+
+    private void initFirestore() {
+        db = FirebaseFirestore.getInstance();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +75,37 @@ public class MainActivity extends AppCompatActivity {
                 }
             }, 2000); // 1 second.
         }
+
+        //firebase
+        initFirestore();
+        Activity activity = new Activity("avt1", "test", "test firestore", "T4", "run test firestore", true);
+        addActivity(activity);
+    }
+    public void addActivity(final Activity avt){
+        db.collection("activitys")
+                .whereEqualTo("username", "user")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+//                            Log.d(TAG, "size "+task.getResult().size() );
+                            //get activity table size
+                            int number = task.getResult().size();
+                            //assign activity's number
+                            avt.setAct_no("acc"+(number+1));
+                            //add to cloud
+                            db.collection("activitys").document().set(avt);
+
+//                            for (QueryDocumentSnapshot document : task.getResult()) {
+//                                Log.d(TAG, document.getId() + " => " + document.getData());
+//                            }
+                        } else {
+                            Log.d(TAG, "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+
     }
 
     @Override

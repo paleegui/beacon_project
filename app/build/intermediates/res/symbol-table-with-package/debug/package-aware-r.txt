@@ -111,6 +111,7 @@ attr buttonBarStyle
 attr buttonGravity
 attr buttonIconDimen
 attr buttonPanelSideLayout
+attr buttonSize
 attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
@@ -145,6 +146,7 @@ attr chipStartPadding
 attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
+attr circleCrop
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -166,6 +168,7 @@ attr colorControlNormal
 attr colorError
 attr colorPrimary
 attr colorPrimaryDark
+attr colorScheme
 attr colorSecondary
 attr colorSwitchThumbNormal
 attr commitIcon
@@ -283,6 +286,8 @@ attr iconStartPadding
 attr iconTint
 attr iconTintMode
 attr iconifiedByDefault
+attr imageAspectRatio
+attr imageAspectRatioAdjust
 attr imageButtonStyle
 attr indeterminateProgressStyle
 attr initialActivityCount
@@ -429,6 +434,7 @@ attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
 attr reverseLayout
 attr rippleColor
+attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
@@ -650,6 +656,17 @@ color colorPrimaryDark
 color color_bathroom
 color color_kitcen
 color color_living_room
+color common_google_signin_btn_text_dark
+color common_google_signin_btn_text_dark_default
+color common_google_signin_btn_text_dark_disabled
+color common_google_signin_btn_text_dark_focused
+color common_google_signin_btn_text_dark_pressed
+color common_google_signin_btn_text_light
+color common_google_signin_btn_text_light_default
+color common_google_signin_btn_text_light_disabled
+color common_google_signin_btn_text_light_focused
+color common_google_signin_btn_text_light_pressed
+color common_google_signin_btn_tint
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -1057,12 +1074,33 @@ drawable bg_kitcen
 drawable bg_living
 drawable bg_working
 drawable button_style
+drawable common_full_open_on_phone
+drawable common_google_signin_btn_icon_dark
+drawable common_google_signin_btn_icon_dark_focused
+drawable common_google_signin_btn_icon_dark_normal
+drawable common_google_signin_btn_icon_dark_normal_background
+drawable common_google_signin_btn_icon_disabled
+drawable common_google_signin_btn_icon_light
+drawable common_google_signin_btn_icon_light_focused
+drawable common_google_signin_btn_icon_light_normal
+drawable common_google_signin_btn_icon_light_normal_background
+drawable common_google_signin_btn_text_dark
+drawable common_google_signin_btn_text_dark_focused
+drawable common_google_signin_btn_text_dark_normal
+drawable common_google_signin_btn_text_dark_normal_background
+drawable common_google_signin_btn_text_disabled
+drawable common_google_signin_btn_text_light
+drawable common_google_signin_btn_text_light_focused
+drawable common_google_signin_btn_text_light_normal
+drawable common_google_signin_btn_text_light_normal_background
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable googleg_disabled_color_18
+drawable googleg_standard_color_18
 drawable ic_backward
 drawable ic_dashboard_black_24dp
 drawable ic_delete
@@ -1141,6 +1179,8 @@ id addBeaconBtn
 id add_other_HomeName
 id add_other_Room
 id add_other_floor
+id adjust_height
+id adjust_width
 id alertTitle
 id all
 id always
@@ -1173,6 +1213,7 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
+id dark
 id decor_content_parent
 id default_activity_button
 id deleteIcon
@@ -1229,6 +1270,7 @@ id icon_UUID
 id icon_group
 id icon_major
 id icon_minor
+id icon_only
 id ifRoom
 id image
 id imageView
@@ -1242,6 +1284,7 @@ id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
 id left
+id light
 id line1
 id line3
 id listMode
@@ -1402,6 +1445,7 @@ id warp_name_addBeacon
 id warp_title_Floor_addBeacon
 id warp_title_Name_addBeacon
 id warp_title_Room_addBeacon
+id wide
 id withText
 id wrap
 id wrap_Floor_addBeacon
@@ -1427,6 +1471,7 @@ integer cancel_button_image_alpha
 integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
+integer google_play_services_version
 integer hide_password_duration
 integer mtrl_btn_anim_delay_ms
 integer mtrl_btn_anim_duration_ms
@@ -1570,11 +1615,35 @@ string bottom_sheet_behavior
 string build_user
 string character_counter_content_description
 string character_counter_pattern
+string common_google_play_services_enable_button
+string common_google_play_services_enable_text
+string common_google_play_services_enable_title
+string common_google_play_services_install_button
+string common_google_play_services_install_text
+string common_google_play_services_install_title
+string common_google_play_services_notification_channel_name
+string common_google_play_services_notification_ticker
+string common_google_play_services_unknown_issue
+string common_google_play_services_unsupported_text
+string common_google_play_services_update_button
+string common_google_play_services_update_text
+string common_google_play_services_update_title
+string common_google_play_services_updating_text
+string common_google_play_services_wear_update_text
+string common_open_on_phone
+string common_signin_button_text
+string common_signin_button_text_long
 string create_name
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string firebase_database_url
 string floor_AddBeacon_Text
 string forget_password
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string hint_email
@@ -1590,6 +1659,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string project_id
 string register
 string register_button
 string room_AddBeacon_Text
@@ -2152,6 +2222,7 @@ styleable LinearConstraintLayout android_orientation
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
+styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom backgroundTint backgroundTintMode cornerRadius icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor strokeColor strokeWidth
 styleable MaterialCardView strokeColor strokeWidth
 styleable MaterialComponentsTheme bottomSheetDialogTheme bottomSheetStyle chipGroupStyle chipStandaloneStyle chipStyle colorAccent colorBackgroundFloating colorPrimary colorPrimaryDark colorSecondary editTextStyle floatingActionButtonStyle materialButtonStyle materialCardViewStyle navigationViewStyle scrimBackground snackbarButtonStyle tabStyle textAppearanceBody1 textAppearanceBody2 textAppearanceButton textAppearanceCaption textAppearanceHeadline1 textAppearanceHeadline2 textAppearanceHeadline3 textAppearanceHeadline4 textAppearanceHeadline5 textAppearanceHeadline6 textAppearanceOverline textAppearanceSubtitle1 textAppearanceSubtitle2 textInputStyle
@@ -2167,6 +2238,7 @@ styleable RecyclerView android_orientation android_descendantFocusability fastSc
 styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
+styleable SignInButton buttonSize colorScheme scopeUris
 styleable Snackbar snackbarButtonStyle
 styleable SnackbarLayout android_maxWidth elevation maxActionInlineWidth
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme
