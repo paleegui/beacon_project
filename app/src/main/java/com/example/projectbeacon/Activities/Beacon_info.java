@@ -15,6 +15,7 @@ import com.example.projectbeacon.Database.DatabaseHandler;
 import com.example.projectbeacon.R;
 
 public class Beacon_info extends AppCompatActivity {
+    private Context context;
     private TheBeacon beacon;
     private DatabaseHandler db;
     private int id;
@@ -23,12 +24,14 @@ public class Beacon_info extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beacon_info);
+        context = this;
 
         db = new DatabaseHandler(this);
         Intent intent = getIntent();
         this.beacon = (TheBeacon) intent.getSerializableExtra("beacon");
         this.id = (int)intent.getExtras().get("id");
         init();
+        OnClick();
     }
 
     private void init(){
@@ -67,11 +70,11 @@ public class Beacon_info extends AppCompatActivity {
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), AddBeacon.class);
+                Intent intent = new Intent(context, AddBeacon.class);
                 intent.putExtra("beacon", beacon);
                 intent.putExtra("id",beacon.getId());
                 intent.putExtra("Flag","edit");
-                getApplicationContext().startActivity(intent);
+                context.startActivity(intent);
                 //notify notifyItemChanged
             }
         });
