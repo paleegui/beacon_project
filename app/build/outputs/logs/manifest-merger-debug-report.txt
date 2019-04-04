@@ -1,0 +1,329 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:2:1-45:12
+MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\material-1.0.0-beta01.aar\ddd30e19404a8dd3419ff0c79a8e2def\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.1.aar\40670eda31a01f70853a00521f372088\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\e98c12e87f87b6fcb5168ad5fc3eb0fb\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0-beta01.aar\b2f6f2d936248049cc0d585f9a2fcf21\AndroidManifest.xml:17:1-22:12
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:2:1-58:12
+MERGED from [androidx.cardview:cardview:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0-beta01.aar\c2738411c28295e36617285df26d25bd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0-beta01.aar\ee1fcb5ea9c592bed64749f0d4534513\AndroidManifest.xml:17:1-22:12
+MERGED from [co.lujun:androidtagview:1.1.7] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\androidtagview-1.1.7.aar\18144a19bd55f8075864af518a002e58\AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\0aad510e4dbe51fa2b738a2026570bf1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\0ca43ffeb3492b41f3cfb3fb2978cbf7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\3ef54d0d7ec547ba6ede5091aad75097\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\323f50143c9cdd393c61bcd8fe15ee44\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.1.aar\56a489992d0495945ff4c52cafe34348\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\transition-1.0.0-beta01.aar\b2cb98d82e6764671df1582969af0e15\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\media-1.0.0-beta01.aar\6f152596c07515fa3397ab18a208bb37\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\04d961a728ee6db02802403cfd50de54\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\23536ea9c362ff1745a63024f66bf784\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\20264b2b75bfb35c8edc87ed10038d79\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\168f5d45dc19065db92da57a789cc32c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\5ab822b9973ea11c85d073582c276a14\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\1425874e900c045ba80cc7c88c777db5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\9df39ec88941f3882a38fcc98692ad36\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\5868ab914003730c21327702c77f02bd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\f986ef874aebee886132c0c7662611d5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\2a9964720adc14fb7d091a3a77dada42\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\601f011a0f4a61c146c4a560183a7077\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\a65edea56672e125ec72e66451c18da8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\60977b7ae586e0dbc70d9847f9e93f7a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\de130699e1718901847af0f262d1940a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\7454ef58fe0d3193b53aeae7b3ddc944\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\2736bf7f3bd704885cb34df54474193f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\97629f3da34fd4fdfbe8066f1515dfe4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\8752709fc6111613ead6c30c65818c19\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\04e25e8d8c3e30df1b8102fa9f82e6e9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\3bbcd0b166c653f1d2c03266f15bf6ad\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:2:1-45:12
+	package
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:4:5-40
+		INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:2:1-45:12
+		INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:6:22-74
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:8:5-68
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:11:5-13:36
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:8:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:9:5-74
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:14:5-16:36
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:9:22-71
+application
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:11:5-43:19
+MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\material-1.0.0-beta01.aar\ddd30e19404a8dd3419ff0c79a8e2def\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\material-1.0.0-beta01.aar\ddd30e19404a8dd3419ff0c79a8e2def\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\e98c12e87f87b6fcb5168ad5fc3eb0fb\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\e98c12e87f87b6fcb5168ad5fc3eb0fb\AndroidManifest.xml:9:5-20
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:20:5-56:19
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:20:5-56:19
+MERGED from [co.lujun:androidtagview:1.1.7] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\androidtagview-1.1.7.aar\18144a19bd55f8075864af518a002e58\AndroidManifest.xml:11:5-12:19
+MERGED from [co.lujun:androidtagview:1.1.7] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\androidtagview-1.1.7.aar\18144a19bd55f8075864af518a002e58\AndroidManifest.xml:11:5-12:19
+MERGED from [androidx.core:core:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\f986ef874aebee886132c0c7662611d5\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\f986ef874aebee886132c0c7662611d5\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\2a9964720adc14fb7d091a3a77dada42\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\2a9964720adc14fb7d091a3a77dada42\AndroidManifest.xml:22:5-23:19
+	android:supportsRtl
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:19:9-35
+	android:label
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:16:9-41
+	android:appComponentFactory
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:14:9-64
+		REJECTED from [androidx.core:core:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\f986ef874aebee886132c0c7662611d5\AndroidManifest.xml:22:18-86
+	android:launchMode
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:17:9-44
+	android:roundIcon
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:18:9-54
+	android:icon
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:15:9-43
+	android:allowBackup
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:20:9-40
+	tools:replace
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:21:9-52
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:12:9-48
+activity#com.example.projectbeacon.Activities.Beacon_info
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:22:9-69
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:22:19-57
+activity#com.example.projectbeacon.Activities.AddBeacon
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:23:9-58
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:23:19-55
+activity#com.example.projectbeacon.Activities.Select_beacon
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:24:9-27:59
+	android:label
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:26:13-65
+	android:theme
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:27:13-56
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:25:13-53
+activity#com.example.projectbeacon.Activities.Main_navigation
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:28:9-30:59
+	android:theme
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:30:13-56
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:29:13-55
+activity#com.example.projectbeacon.Activities.User_Register
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:31:9-33:59
+	android:theme
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:33:13-56
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:32:13-53
+activity#com.example.projectbeacon.Activities.ClinomaniaLogin_1
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:34:9-66
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:34:19-63
+activity#com.example.projectbeacon.Activities.ClinomaniaLogin
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:35:9-64
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:35:19-61
+activity#com.example.projectbeacon.Activities.MainActivity
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:36:9-42:20
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:36:19-58
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:37:13-41:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:38:17-69
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:38:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:40:17-77
+	android:name
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml:40:27-74
+uses-sdk
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\material-1.0.0-beta01.aar\ddd30e19404a8dd3419ff0c79a8e2def\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\material-1.0.0-beta01.aar\ddd30e19404a8dd3419ff0c79a8e2def\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.1.aar\40670eda31a01f70853a00521f372088\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.1.aar\40670eda31a01f70853a00521f372088\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\e98c12e87f87b6fcb5168ad5fc3eb0fb\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.3.aar\e98c12e87f87b6fcb5168ad5fc3eb0fb\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0-beta01.aar\b2f6f2d936248049cc0d585f9a2fcf21\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\legacy-support-v4-1.0.0-beta01.aar\b2f6f2d936248049cc0d585f9a2fcf21\AndroidManifest.xml:20:5-44
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:7:5-9:41
+MERGED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.cardview:cardview:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0-beta01.aar\c2738411c28295e36617285df26d25bd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0-beta01.aar\c2738411c28295e36617285df26d25bd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0-beta01.aar\ee1fcb5ea9c592bed64749f0d4534513\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0-beta01.aar\ee1fcb5ea9c592bed64749f0d4534513\AndroidManifest.xml:20:5-44
+MERGED from [co.lujun:androidtagview:1.1.7] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\androidtagview-1.1.7.aar\18144a19bd55f8075864af518a002e58\AndroidManifest.xml:7:5-9:41
+MERGED from [co.lujun:androidtagview:1.1.7] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\androidtagview-1.1.7.aar\18144a19bd55f8075864af518a002e58\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\0aad510e4dbe51fa2b738a2026570bf1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\0aad510e4dbe51fa2b738a2026570bf1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\0ca43ffeb3492b41f3cfb3fb2978cbf7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\0ca43ffeb3492b41f3cfb3fb2978cbf7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\3ef54d0d7ec547ba6ede5091aad75097\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\3ef54d0d7ec547ba6ede5091aad75097\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\323f50143c9cdd393c61bcd8fe15ee44\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\323f50143c9cdd393c61bcd8fe15ee44\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.1.aar\56a489992d0495945ff4c52cafe34348\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.1.aar\56a489992d0495945ff4c52cafe34348\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\transition-1.0.0-beta01.aar\b2cb98d82e6764671df1582969af0e15\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\transition-1.0.0-beta01.aar\b2cb98d82e6764671df1582969af0e15\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\media-1.0.0-beta01.aar\6f152596c07515fa3397ab18a208bb37\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0-beta01] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\media-1.0.0-beta01.aar\6f152596c07515fa3397ab18a208bb37\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\04d961a728ee6db02802403cfd50de54\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\04d961a728ee6db02802403cfd50de54\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\23536ea9c362ff1745a63024f66bf784\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\23536ea9c362ff1745a63024f66bf784\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\20264b2b75bfb35c8edc87ed10038d79\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\20264b2b75bfb35c8edc87ed10038d79\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\168f5d45dc19065db92da57a789cc32c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\168f5d45dc19065db92da57a789cc32c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\5ab822b9973ea11c85d073582c276a14\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\5ab822b9973ea11c85d073582c276a14\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\1425874e900c045ba80cc7c88c777db5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\1425874e900c045ba80cc7c88c777db5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\9df39ec88941f3882a38fcc98692ad36\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\9df39ec88941f3882a38fcc98692ad36\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\5868ab914003730c21327702c77f02bd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\5868ab914003730c21327702c77f02bd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\f986ef874aebee886132c0c7662611d5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\f986ef874aebee886132c0c7662611d5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\2a9964720adc14fb7d091a3a77dada42\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\2a9964720adc14fb7d091a3a77dada42\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\601f011a0f4a61c146c4a560183a7077\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\601f011a0f4a61c146c4a560183a7077\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\a65edea56672e125ec72e66451c18da8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\a65edea56672e125ec72e66451c18da8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\60977b7ae586e0dbc70d9847f9e93f7a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\60977b7ae586e0dbc70d9847f9e93f7a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\de130699e1718901847af0f262d1940a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\de130699e1718901847af0f262d1940a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\7454ef58fe0d3193b53aeae7b3ddc944\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\7454ef58fe0d3193b53aeae7b3ddc944\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\2736bf7f3bd704885cb34df54474193f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\2736bf7f3bd704885cb34df54474193f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\97629f3da34fd4fdfbe8066f1515dfe4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\97629f3da34fd4fdfbe8066f1515dfe4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\8752709fc6111613ead6c30c65818c19\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\8752709fc6111613ead6c30c65818c19\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\04e25e8d8c3e30df1b8102fa9f82e6e9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\04e25e8d8c3e30df1b8102fa9f82e6e9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\3bbcd0b166c653f1d2c03266f15bf6ad\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\3bbcd0b166c653f1d2c03266f15bf6ad\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\NOEY\Documents\GitHub\FinalProject\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:17:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:18:22-78
+receiver#org.altbeacon.beacon.startup.StartupBroadcastReceiver
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:21:9-27:20
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:21:19-87
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED+action:name:android.intent.action.BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:22:13-26:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:23:17-79
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:23:25-76
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:24:17-87
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:24:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:25:17-90
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:25:25-87
+service#org.altbeacon.beacon.service.BeaconService
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:29:9-34:38
+	android:enabled
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:31:13-35
+	android:label
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:34:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:32:13-37
+	android:isolatedProcess
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:33:13-44
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:30:13-70
+service#org.altbeacon.beacon.BeaconIntentProcessor
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:36:13-70
+service#org.altbeacon.beacon.service.ScanJob
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:39:9-48:19
+	android:permission
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:41:13-69
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:40:13-64
+meta-data#immediateScanJobId
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:42:13-44:45
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:44:17-42
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:43:17-50
+meta-data#periodicScanJobId
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:45:13-47:45
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:47:17-42
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:46:17-49
+service#org.altbeacon.bluetooth.BluetoothTestJob
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:49:9-55:19
+	android:permission
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:51:13-69
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:50:13-68
+meta-data#jobId
+ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:52:13-54:46
+	android:value
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:54:17-43
+	android:name
+		ADDED from [org.altbeacon:android-beacon-library:2.16.1] C:\Users\NOEY\.gradle\caches\transforms-1\files-1.1\jetified-android-beacon-library-2.16.1.aar\2a0911c97aec9ee9d0acd86f6656447d\AndroidManifest.xml:53:17-37
