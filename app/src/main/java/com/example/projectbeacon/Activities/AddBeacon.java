@@ -44,18 +44,30 @@ public class AddBeacon extends AppCompatActivity {
     private List<String> nFloor;
     private List<String> nhome;
     private List<String> nRoom;
+    private String flag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_beacon);
 
+        Intent intent = getIntent();
+        this.beacon = (TheBeacon) intent.getSerializableExtra("beacon");
+
+        flag = (String)intent.getExtras().get("Flag");
+        if(flag.equals("edit")){
+            TextView header = (TextView)findViewById(R.id.header_addbeacon);
+            header.setText("แก้ไขบีคอน");
+        }else if(flag.equals("addBeacon")){
+            TextView header = (TextView)findViewById(R.id.header_addbeacon);
+            header.setText("ตั้งค่าบีคอน");
+        }
+
         db = new DatabaseHandler(this);
         onClick();
         tapClick();
 
-        Intent intent = getIntent();
-        this.beacon = (TheBeacon) intent.getSerializableExtra("beacon");
+
 
 
     }
@@ -207,6 +219,13 @@ public class AddBeacon extends AppCompatActivity {
         final EditText newRoomName = (EditText)findViewById(R.id.edit_Other_roomName);
         final EditText newFloor = (EditText)findViewById(R.id.edit_Other_FloorName);
 
+        if(flag.equals("edit")){
+            addBeacon.setText("แก้ไข");
+        }else if(flag.equals("addBeacon")){
+            TextView header = (TextView)findViewById(R.id.header_addbeacon);
+            header.setText("เพิ่มบีคอน");
+        }
+
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -244,35 +263,43 @@ public class AddBeacon extends AppCompatActivity {
             addBeacon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (homeName != null && roomName != null && floor != null) {
-                        beacon.setRoomName(roomName);
-                        beacon.setHomeName(homeName);
-                        beacon.setFloor(floor);
-                        db.addBeacon(beacon);
-                        Toast.makeText(getApplicationContext(), "ลงทะเบียนบีคอนแล้ว", Toast.LENGTH_SHORT).show();
-                        Log.d("has cliked ", ": ");
+                    if(flag.equals("edit")){
+                        //click for edit
+                        db.updateBeacon(beacon);
+                    }else if(flag.equals("addBeacon")){
+                        //click for add Beacon
+                        if (homeName != null && roomName != null && floor != null) {
+                            beacon.setRoomName(roomName);
+                            beacon.setHomeName(homeName);
+                            beacon.setFloor(floor);
+                            db.addBeacon(beacon);
+                            Toast.makeText(getApplicationContext(), "ลงทะเบียนบีคอนแล้ว", Toast.LENGTH_SHORT).show();
+                            Log.d("has cliked ", ": ");
 
-                        startActivity(new Intent(AddBeacon.this, Select_beacon.class));
+                            startActivity(new Intent(AddBeacon.this, Select_beacon.class));
 
-                    } else {
-                        Log.d("NULL", "Null in addbeacon ");
-                        //แจ้งเตือนหรือแสดงข้อความแจ้งเตือน เมื่อกด add แล้วไม่มีชื่อ หรือ ห้อง หรือ ชั้น
-                        String wordException = "คุณยังไม่ได้เลือกหรือใส่";
-                        if(beacon == null){
-                            wordException = wordException+ "ชื่อบีคอน";
-                        }
-                        if(homeName == null){
-                            wordException = wordException+ " ชื่อบ้าน";
-                        }
-                        if(roomName == null){
-                            wordException = wordException+ " ชื่อห้อง";
-                        }
-                        if(floor == null){
-                            wordException = wordException + " ชั้น";
-                        }
+                        } else {
+                            Log.d("NULL", "Null in addbeacon ");
+                            //แจ้งเตือนหรือแสดงข้อความแจ้งเตือน เมื่อกด add แล้วไม่มีชื่อ หรือ ห้อง หรือ ชั้น
+                            String wordException = "คุณยังไม่ได้เลือกหรือใส่";
+                            if(beacon == null){
+                                wordException = wordException+ "ชื่อบีคอน";
+                            }
+                            if(homeName == null){
+                                wordException = wordException+ " ชื่อบ้าน";
+                            }
+                            if(roomName == null){
+                                wordException = wordException+ " ชื่อห้อง";
+                            }
+                            if(floor == null){
+                                wordException = wordException + " ชั้น";
+                            }
 
-                        Toast.makeText(getApplicationContext(), wordException, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), wordException, Toast.LENGTH_SHORT).show();
+                        }
                     }
+
+
                 }
             });
     }

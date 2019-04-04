@@ -55,7 +55,11 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         return beacons.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public interface OnItemChange {
+        void notifyAdapter(int position);
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
 //        public int id
         private TextView beacon_name;
         private TextView room_name;
@@ -77,93 +81,14 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
                     TheBeacon beacon = beacons.get(position);
                     Intent intent = new Intent(context, Beacon_info.class);
                     intent.putExtra("beacon", beacon);
+                    intent.putExtra("id",beacon.getId());
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
-
                 }
             });
         }
-        @Override
-        public void onClick(View view) {
-            switch (view.getId()) {
-//                case R.id.editeButton:
-//                    editeItem(groceryItem.get(getAdapterPosition()));
-//                    break;
-//                case R.id.deleteButton:
-//                    deleteItem(groceryItem.get(getAdapterPosition()).getId());
-//                    break;
-//            }
-            }
-
-//        public void deleteItem(final int id) {
-//            //create an AlertDiaglog
-//            alertDialogBuilder = new AlertDialog.Builder(context);
-//
-//            inflater = LayoutInflater.from(context);
-//            View view = inflater.inflate(R.layout.confirmation_dialog, null);
-//            Button onButton = (Button) view.findViewById(R.id.noButton);
-//            Button yesButton = (Button) view.findViewById(R.id.yesButton);
-//            alertDialogBuilder.setView(view);
-//            dialog = alertDialogBuilder.create();
-//            dialog.show();
-//
-//            onButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    dialog.dismiss();
-//                }
-//            });
-//
-//            yesButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    //delete the item.
-//                    DatabaseHandler db = new DatabaseHandler(context);
-//                    //delete item
-//                    db.deleteGrocery(id);
-//                    groceryItem.remove(getAdapterPosition());
-//                    notifyItemRemoved(getAdapterPosition());
-//
-//                    dialog.dismiss();
-//                }
-//            });
-//        }
-//
-//        public void editeItem(final Grocery grocery) {
-//            alertDialogBuilder = new AlertDialog.Builder(context);
-//            inflater = LayoutInflater.from(context);
-//            View view = inflater.inflate(R.layout.popup, null);
-//
-//            final EditText groceryItem = (EditText) view.findViewById(R.id.groceryItem);
-//            final EditText quantity = (EditText) view.findViewById(R.id.groceryQty);
-//            final Button saveButton = (Button) view.findViewById(R.id.saveButton);
-//            final TextView title = (TextView) view.findViewById(R.id.title);
-//            title.setText("Edit Grocery");
-//
-//            alertDialogBuilder.setView(view);
-//            dialog = alertDialogBuilder.create();
-//            dialog.show();
-//
-//            saveButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    DatabaseHandler db = new DatabaseHandler(context);
-//
-//                    //update item
-//                    grocery.setName(groceryItem.getText().toString());
-//                    grocery.setQuantity(groceryItem.getText().toString());
-//
-//                    if (!groceryItem.getText().toString().isEmpty()
-//                            && !groceryItem.getText().toString().isEmpty()) {
-//                        db.updateGrocery(grocery);
-//                        notifyItemChanged(getAdapterPosition(), grocery);
-//                    } else {
-//                        Snackbar.make(view, "Add Grocery and Quantity", Snackbar.LENGTH_LONG).show();
-//                    }
-//                    dialog.dismiss();
-//                }
-//            });
-        }
 
     }
+
+
 }

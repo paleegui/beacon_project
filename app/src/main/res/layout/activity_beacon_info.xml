@@ -225,6 +225,15 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/button_style">
 
+        <ImageView
+            android:id="@+id/edite_beaconInfo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_edite" />
+
         <TextView
             android:id="@+id/floorInfo"
             android:layout_width="wrap_content"
@@ -312,7 +321,7 @@
 
     <RelativeLayout
         android:id="@+id/wrap_delete_info"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">

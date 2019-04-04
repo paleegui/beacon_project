@@ -2,8 +2,12 @@ package com.example.projectbeacon.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.projectbeacon.Beacon.TheBeacon;
@@ -13,6 +17,7 @@ import com.example.projectbeacon.R;
 public class Beacon_info extends AppCompatActivity {
     private TheBeacon beacon;
     private DatabaseHandler db;
+    private int id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +27,7 @@ public class Beacon_info extends AppCompatActivity {
         db = new DatabaseHandler(this);
         Intent intent = getIntent();
         this.beacon = (TheBeacon) intent.getSerializableExtra("beacon");
-
+        this.id = (int)intent.getExtras().get("id");
         init();
     }
 
@@ -53,5 +58,31 @@ public class Beacon_info extends AppCompatActivity {
         floor.setText(beacon.getFloor());
         homeName.setText(beacon.getHomeName());
 
+    }
+    private void OnClick(){
+        ImageView edit = (ImageView)findViewById(R.id.edite_beaconInfo);
+        RelativeLayout deleteBeacon = (RelativeLayout)findViewById(R.id.wrap_delete_info);
+
+        //click edit button
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AddBeacon.class);
+                intent.putExtra("beacon", beacon);
+                intent.putExtra("id",beacon.getId());
+                intent.putExtra("Flag","edit");
+                getApplicationContext().startActivity(intent);
+                //notify notifyItemChanged
+            }
+        });
+
+        //click delete button
+        deleteBeacon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                db.deleteBeacon(id);
+                //notify หาวิธีแก้อยู่ notifyItemChanged
+            }
+        });
     }
 }

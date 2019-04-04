@@ -96,11 +96,28 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return beaconList;
     }
 
-    public int updateBeacon(){
-        return 0;
+    public int updateBeacon(TheBeacon beacon){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        Gson gson = new Gson();
+
+        values.put(Constants.KEY_BEACON_NAME,beacon.getBeaconName());
+        values.put(Constants.KEY_HOME_NAME, beacon.getHomeName());
+        values.put(Constants.KEY_FLOOR, beacon.getFloor());
+        values.put(Constants.KEY_ROOM_NAME, beacon.getRoomName());
+        values.put(Constants.KEY_THE_BEACON, gson.toJson(beacon).getBytes());
+
+        //update row
+        return db.update(Constants.TABLE_NAME, values, Constants.KEY_ID + "=?", new String[]{String.valueOf(beacon.getId())});
     }
 
-    public void deleteBeacon(){
+    public void deleteBeacon(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(Constants.TABLE_NAME, Constants.KEY_ID + " = ?",
+                new String[]{String.valueOf(id)});
+
+        db.close();
 
     }
 

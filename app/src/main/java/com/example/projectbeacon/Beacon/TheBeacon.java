@@ -11,17 +11,20 @@ public class TheBeacon implements Serializable {
     private String floor;
     private String homeName;
     private Beacon beacon;
+    private int id;
 
     public TheBeacon(){
 
     }
 
-    public TheBeacon(String beaconName, String roomName, String floor, String homeName, Beacon beacon){
+    public TheBeacon(String beaconName, String roomName, String floor, String homeName, Beacon beacon, int id){
         this.beaconName = beaconName;
         this.roomName = roomName;
         this.floor = floor;
         this.homeName = homeName;
         this.beacon = beacon;
+        this.id = id;
+
 
     }
 
@@ -61,4 +64,7 @@ public class TheBeacon implements Serializable {
 
     public void setBeacon(Beacon beacon){ this.beacon = beacon; }
 
+    public void setId(int id) { this.id = id; }
+
+    public int getId(){ return id; }
 }
