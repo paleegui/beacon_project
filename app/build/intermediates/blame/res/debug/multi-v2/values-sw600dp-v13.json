@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\NOEY\\Documents\\GitHub\\FinalProject\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.1.aar/18f677296910e033db452b1da603b5ce/res/values-sw600dp-v13/values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
-                    }
-                },
-                {
-                    "source": "/Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/material-1.0.0-beta01.aar/0c3cb4def1fcb363075f98d5efadf057/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\NOEY\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0-beta01.aar\\ddd30e19404a8dd3419ff0c79a8e2def\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -30,6 +20,16 @@
                         "endLines": "10,11,12,13,14,15,17,18,19,23",
                         "endColumns": "59,69,70,71,57,57,10,63,62,10",
                         "endOffsets": "666,736,807,879,937,995,1104,1168,1231,1403"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\NOEY\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.1.aar\\40670eda31a01f70853a00521f372088\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
                     }
                 }
             ]

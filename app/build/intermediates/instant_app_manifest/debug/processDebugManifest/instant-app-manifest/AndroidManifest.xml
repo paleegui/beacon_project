@@ -32,6 +32,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.projectbeacon.Activities.Beacon_info" />
         <activity android:name="com.example.projectbeacon.Activities.AddBeacon" />
         <activity
             android:name="com.example.projectbeacon.Activities.Select_beacon"

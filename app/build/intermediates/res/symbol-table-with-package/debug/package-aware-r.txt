@@ -1047,6 +1047,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_beacon_info
+drawable background_info
 drawable beacon_icon
 drawable bed_room
 drawable bg_ba
@@ -1063,6 +1065,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_backward
 drawable ic_dashboard_black_24dp
+drawable ic_delete
 drawable ic_home_black_24dp
 drawable ic_kitcen
 drawable ic_launcher_background
@@ -1108,6 +1111,7 @@ id Other_roomName
 id RSSI_selectText
 id RecyclerShowAll
 id RecyclerViewID
+id RoomName_inCard
 id SHIFT
 id SYM
 id TX_selectText
@@ -1144,6 +1148,7 @@ id async
 id auto
 id barrier
 id beaconNameID
+id beacon_info_name
 id becon_select_name
 id beginning
 id big_warp_addBeacon
@@ -1170,6 +1175,7 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
+id deleteIcon
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1203,6 +1209,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
+id floorInfo
 id forever
 id ghost_view
 id gone
@@ -1212,6 +1219,7 @@ id header_addbeacon
 id header_beconlist
 id home
 id homeAsUp
+id homeNameInfo
 id home_icon
 id home_name
 id icon
@@ -1279,10 +1287,12 @@ id pure_teal
 id radio
 id random
 id rangingID
+id ranging_inCard
 id ranging_select
 id right
 id right_icon
 id right_side
+id roomInfo
 id roomNameID
 id rtl
 id save_image_matrix
@@ -1403,6 +1413,7 @@ id wrap_Room_addBeacon
 id wrap_TX
 id wrap_UUID
 id wrap_content
+id wrap_delete_info
 id wrap_home_addBeacon
 id wrap_major
 id wrap_majorANDrssi
@@ -1456,6 +1467,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_beacon
+layout activity_beacon_info
 layout activity_clinomania_login
 layout activity_clinomania_login_1
 layout activity_main
