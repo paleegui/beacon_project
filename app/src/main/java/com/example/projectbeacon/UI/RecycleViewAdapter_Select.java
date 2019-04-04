@@ -87,6 +87,7 @@ public class RecycleViewAdapter_Select extends RecyclerView.Adapter<RecycleViewA
                     b.setBeacon(beacon);
                     Intent intent = new Intent(context, AddBeacon.class);
                     intent.putExtra("beacon", b);
+                    intent.putExtra("Flag","addBeacon");
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
                 }
