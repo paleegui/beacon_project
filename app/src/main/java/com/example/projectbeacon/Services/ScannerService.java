@@ -1,6 +1,8 @@
 package com.example.projectbeacon.Services;
 
 import android.app.Application;
+import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
@@ -8,10 +10,13 @@ import android.content.Context;
 import android.content.Intent;
 
 import androidx.core.app.NotificationCompat;
+
+import android.os.Build;
 import android.util.Log;
 
 import com.example.projectbeacon.Activities.Select_beacon;
 import com.example.projectbeacon.Activities.fragment.ListBeacon_fragment;
+import com.example.projectbeacon.Activities.fragment.Location_fragment;
 import com.example.projectbeacon.R;
 
 import org.altbeacon.beacon.Beacon;
@@ -58,16 +63,14 @@ public class ScannerService extends Application implements BootstrapNotifier {
         // the ability to continually scan for long periods of time in the background on Andorid 8+
         // in exchange for showing an icon at the top of the screen and a always-on notification to
         // communicate to users that your app is using resources in the background.
-        //
 
-        /*
+
         Notification.Builder builder = new Notification.Builder(this);
-        builder.setSmallIcon(R.drawable.ic_launcher);
+        builder.setSmallIcon(R.drawable.beacon_icon);
         builder.setContentTitle("Scanning for Beacons");
-        Intent intent = new Intent(this, MonitoringActivity.class);
+        Intent intent = new Intent(this, Location_fragment.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(
-                this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT
-        );
+                this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(pendingIntent);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel("My Notification Channel ID",
@@ -85,14 +88,13 @@ public class ScannerService extends Application implements BootstrapNotifier {
         // cycle that would otherwise be disallowed by the operating system.
         //
         beaconManager.setEnableScheduledScanJobs(false);
-        beaconManager.setBackgroundBetweenScanPeriod(0);
+        beaconManager.setBackgroundBetweenScanPeriod(10000l);
         beaconManager.setBackgroundScanPeriod(1100);
-        */
+
 
         Log.d(TAG, "setting up background monitoring for beacons and power saving");
         // wake up the app when a beacon is seen
-        Region region = new Region("backgroundRegion",
-                null, null, null);
+        Region region = new Region("backgroundRegion", null, null, null);
         regionBootstrap = new RegionBootstrap(this, region);
 
         //////////

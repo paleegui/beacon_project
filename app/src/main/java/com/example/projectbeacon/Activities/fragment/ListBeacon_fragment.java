@@ -35,7 +35,7 @@ import java.util.Collection;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ListBeacon_fragment extends Fragment implements BeaconConsumer,ShowRoom_BeaconList.OnFragmentInteractionListener,
+public class ListBeacon_fragment extends Fragment implements ShowRoom_BeaconList.OnFragmentInteractionListener,
 ShowFloor_BeaconList.OnFragmentInteractionListener, ShowAll_BeaconList.OnFragmentInteractionListener{
     private RecyclerView recyclerView;
     private RecycleViewAdapter recyeclerViewAdapter;
@@ -128,69 +128,13 @@ ShowFloor_BeaconList.OnFragmentInteractionListener, ShowAll_BeaconList.OnFragmen
             }
         });
 
-        //
         beaconManager = BeaconManager.getInstanceForApplication(context);
-
-        //UI Showing
-//        recyclerView = (RecyclerView)v.findViewById(R.id.RecyclerViewID);
-//        recyclerView.setHasFixedSize(true);
-//        recyclerView.setLayoutManager(new GridLayoutManager(context,2));
-
-
-        //new ArrayList
-        listItem = new ArrayList<Beacon>();
-
-        beaconManager.bind(this);
-
         return v;
-    }
-
-    @Override
-    public void onBeaconServiceConnect() {
-        RangeNotifier rangeNotifier = new RangeNotifier() {
-            @Override
-            public void didRangeBeaconsInRegion(Collection<Beacon> beacons, Region region) {
-                listItem = (ArrayList<Beacon>) beacons;
-                if (beacons.size() > 0) {
-                    for(Beacon beacon :beacons){
-                        Log.d("Test","The Beacon "+beacon.toString()+ "is about:" + beacon.getDistance());
-                        Log.d("Test11",""+beacon.getBluetoothAddress());
-                    }
-                    Log.d("Test","----------------------------------------------------");
-                }
-
-//                recyeclerViewAdapter = new RecycleViewAdapter(context,listItem);
-//                recyclerView.setAdapter(recyeclerViewAdapter);
-//                recyeclerViewAdapter.notifyDataSetChanged();
-            }
-        };
-
-
-        try {
-            beaconManager.startRangingBeaconsInRegion(new Region("MyUUID",null, null, null));
-            beaconManager.addRangeNotifier(rangeNotifier);
-        } catch (RemoteException e) {   }
-    }
-
-    @Override
-    public Context getApplicationContext() {
-        return null;
-    }
-
-    @Override
-    public void unbindService(ServiceConnection serviceConnection) {
-
-    }
-
-    @Override
-    public boolean bindService(Intent intent, ServiceConnection serviceConnection, int i) {
-        return false;
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        beaconManager.unbind(this);
     }
 
     @Override

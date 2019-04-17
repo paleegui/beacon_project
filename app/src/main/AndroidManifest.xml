@@ -29,10 +29,10 @@
             android:name=".Activities.Main_navigation"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activities.User_Register"
+            android:name=".Activities.login.User_Register"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Activities.ClinomaniaLogin_1" />
-        <activity android:name=".Activities.ClinomaniaLogin" />
+        <activity android:name=".Activities.login.ClinomaniaLogin_1" />
+        <activity android:name=".Activities.login.ClinomaniaLogin" />
         <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

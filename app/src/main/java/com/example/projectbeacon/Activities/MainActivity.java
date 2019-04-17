@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.example.projectbeacon.Activities.login.ClinomaniaLogin;
 import com.example.projectbeacon.R;
 
 import org.altbeacon.beacon.Beacon;

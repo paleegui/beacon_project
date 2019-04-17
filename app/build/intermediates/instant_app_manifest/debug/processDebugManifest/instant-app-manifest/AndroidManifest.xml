@@ -49,10 +49,10 @@
             android:name="com.example.projectbeacon.Activities.Main_navigation"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.example.projectbeacon.Activities.User_Register"
+            android:name="com.example.projectbeacon.Activities.login.User_Register"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.projectbeacon.Activities.ClinomaniaLogin_1" />
-        <activity android:name="com.example.projectbeacon.Activities.ClinomaniaLogin" />
+        <activity android:name="com.example.projectbeacon.Activities.login.ClinomaniaLogin_1" />
+        <activity android:name="com.example.projectbeacon.Activities.login.ClinomaniaLogin" />
         <activity android:name="com.example.projectbeacon.Activities.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

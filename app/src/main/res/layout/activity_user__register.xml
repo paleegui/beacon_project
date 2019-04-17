@@ -5,10 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_Bluesky"
-    tools:context=".Activities.User_Register">
+    tools:context=".Activities.login.User_Register">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/registerBtn_register"
         android:layout_width="214dp"
         android:layout_height="57dp"
         android:layout_marginStart="8dp"
@@ -29,7 +39,7 @@
         app:layout_constraintVertical_bias="0.148" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/title_create_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -42,107 +52,145 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/info_user_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/sukhumvitset_bold"
         android:text="@string/semi_title_register"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintStart_toStartOf="@+id/title_create_user"
+        app:layout_constraintTop_toBottomOf="@+id/title_create_user" />
 
-    <TextView
-        android:id="@+id/textView12"
+    <LinearLayout
+        android:id="@+id/wrap_register_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/sukhumvitset_bold"
-        android:text="@string/build_user"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/info_user_register"
+        app:layout_constraintTop_toBottomOf="@+id/info_user_register">
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="288dp"
-        android:layout_height="40dp"
-        android:background="@drawable/button_style"
-        android:ems="10"
-        android:fontFamily="@font/sukhumvitset_bold"
-        android:hint="@string/hint_username"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:text="@string/build_user"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/info_user_register"
+            app:layout_constraintTop_toBottomOf="@+id/info_user_register" />
 
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="288dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/button_style"
-        android:ems="10"
-        android:fontFamily="@font/sukhumvitset_bold"
-        android:hint="@string/hint_password"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        <EditText
+            android:id="@+id/edit_username_register"
+            android:layout_width="288dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_style"
+            android:ems="10"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:hint="@string/hint_username"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="288dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/button_style"
-        android:ems="10"
-        android:fontFamily="@font/sukhumvitset_bold"
-        android:hint="@string/hint_email"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/editText4"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        <EditText
+            android:id="@+id/edit_password_register"
+            android:layout_width="288dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_style"
+            android:ems="10"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/edit_username_register"
+            app:layout_constraintTop_toBottomOf="@+id/edit_username_register" />
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="288dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/button_style"
-        android:ems="10"
-        android:fontFamily="@font/sukhumvitset_bold"
-        android:hint="@string/hint_phone_number"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/editText5"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        <EditText
+            android:id="@+id/edit_email_register"
+            android:layout_width="288dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_style"
+            android:ems="10"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:hint="@string/hint_email"
+            android:inputType="textVisiblePassword|textNoSuggestions"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/edit_password_register"
+            app:layout_constraintTop_toBottomOf="@+id/edit_password_register" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/sukhumvitset_bold"
-        android:text="@string/birth_date"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/editText6"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        <EditText
+            android:id="@+id/edit_phoneN_register"
+            android:layout_width="288dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_style"
+            android:ems="10"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:hint="@string/hint_phone_number"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/edit_email_register"
+            app:layout_constraintTop_toBottomOf="@+id/edit_email_register" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/sukhumvitset_bold"
+            android:text="@string/birth_date"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/edit_phoneN_register"
+            app:layout_constraintTop_toBottomOf="@+id/edit_phoneN_register" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/day"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_style"
+                android:ems="10"
+                android:hint="วันเกิด"
+                android:inputType="date|textPersonName"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/month"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_style"
+                android:ems="10"
+                android:hint="เดือน"
+                android:inputType="date|textPersonName"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_style"
+                android:ems="10"
+                android:hint="ปี (พ.ศ.)"
+                android:inputType="date|textPersonName"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

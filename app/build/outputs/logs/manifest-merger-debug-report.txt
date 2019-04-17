@@ -203,20 +203,20 @@ ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/
 		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:30:13-56
 	android:name
 		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:29:13-55
-activity#com.example.projectbeacon.Activities.User_Register
+activity#com.example.projectbeacon.Activities.login.User_Register
 ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:31:9-33:59
 	android:theme
 		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:33:13-56
 	android:name
-		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:32:13-53
-activity#com.example.projectbeacon.Activities.ClinomaniaLogin_1
-ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:34:9-66
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:32:13-59
+activity#com.example.projectbeacon.Activities.login.ClinomaniaLogin_1
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:34:9-72
 	android:name
-		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:34:19-63
-activity#com.example.projectbeacon.Activities.ClinomaniaLogin
-ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:35:9-64
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:34:19-69
+activity#com.example.projectbeacon.Activities.login.ClinomaniaLogin
+ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:35:9-70
 	android:name
-		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:35:19-61
+		ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:35:19-67
 activity#com.example.projectbeacon.Activities.MainActivity
 ADDED from /Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/AndroidManifest.xml:36:9-42:20
 	android:name

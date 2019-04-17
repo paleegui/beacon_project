@@ -15,6 +15,10 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fade_logo
+anim fade_out_center
+anim frombottom
+anim fromtop
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1109,6 +1113,7 @@ drawable ic_home_black_24dp
 drawable ic_kitcen
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logo
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
@@ -1144,6 +1149,8 @@ id CTRL
 id FUNCTION
 id Header_addBeacon
 id META
+id Mddgard
+id Mddgard_wellcome
 id Other_FloorName
 id Other_homeName
 id Other_roomName
@@ -1196,7 +1203,6 @@ id big_warp_addBeacon
 id blocking
 id bottom
 id button2
-id button4
 id buttonPanel
 id cancel_action
 id center
@@ -1215,6 +1221,7 @@ id coordinator
 id custom
 id customPanel
 id dark
+id day
 id decor_content_parent
 id default_activity_button
 id deleteIcon
@@ -1228,15 +1235,17 @@ id direct
 id disableHome
 id editText
 id editText2
-id editText3
-id editText4
-id editText5
-id editText6
+id editText_password
+id editText_userName
 id edit_Other_FloorName
 id edit_Other_homeName
 id edit_Other_roomName
+id edit_email_register
 id edit_name_addBeacon
+id edit_password_register
+id edit_phoneN_register
 id edit_query
+id edit_username_register
 id edite_beaconInfo
 id end
 id end_padder
@@ -1254,6 +1263,7 @@ id filled
 id fixed
 id floorInfo
 id forever
+id forgetpassWord
 id ghost_view
 id gone
 id group_divider
@@ -1280,6 +1290,7 @@ id imageView2
 id imageView3
 id imageView4
 id info
+id info_user_register
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1291,6 +1302,9 @@ id line1
 id line3
 id listMode
 id list_item
+id loginParent
+id login_button
+id login_button2
 id ltr
 id main_frame
 id main_nav
@@ -1301,6 +1315,7 @@ id message
 id middle
 id mini
 id minor_selectText
+id month
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1334,6 +1349,9 @@ id random
 id rangingID
 id ranging_inCard
 id ranging_select
+id registerBtn_register
+id register_textview
+id register_textview2
 id right
 id right_icon
 id right_side
@@ -1397,9 +1415,6 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
-id textView10
-id textView11
 id textView12
 id textView13
 id textView14
@@ -1409,10 +1424,8 @@ id textView17
 id textView18
 id textView2
 id textView3
-id textView4
 id textView5
 id textView6
-id textView7
 id textView8
 id textView9
 id text_input_password_toggle
@@ -1424,6 +1437,7 @@ id title
 id titleDividerNoCustom
 id title_Floor_addBeacon
 id title_Room_addBeacon
+id title_create_user
 id title_home_addBeacon
 id title_name_addbeacon
 id title_select_beacon
@@ -1465,6 +1479,8 @@ id wrap_major
 id wrap_majorANDrssi
 id wrap_minor
 id wrap_minorANDtx
+id wrap_register_edit
+id year
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
