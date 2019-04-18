@@ -92,34 +92,36 @@ public class BeaconMonitoringService extends Service implements BeaconConsumer {
         }
     }
 
-//    @Override
-//    public int onStartCommand(Intent intent, int flags, int startId) {
-//        Log.d(TAG, "onStart Start");
-//        Select_beacon app = (Select_beacon)getApplication();
-//        beaconManager =
-//
-//        beaconManager.setBackgroundScanPeriod(1100l);
-//        beaconManager.setBackgroundBetweenScanPeriod(10000l);
-//
-//        beaconManager.getBeaconParsers ().add ( new BeaconParser().setBeaconLayout (
-//                "m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24" ) );
-//        beaconManager.bind(this);
-//
-//        Log.d(TAG, "onStart End");
-//
-//        Notification noti = new Notification.Builder(this)
-//                .setContentTitle("Started")
-//                .setContentText("Here we go")
-//                .setSmallIcon(R.mipmap.ic_launcher)
-//                .build();
-//
-//        NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-//        mNotificationManager.cancel(2);
-//        mNotificationManager.notify(1, noti);
-//
-//
-//        return START_STICKY;
-//    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        Log.d(TAG, "onStart Start");
+
+        Location_fragment app = (Location_fragment) getApplication();
+
+        beaconManager = getApplicationContext()
+        beaconManager.setBackgroundScanPeriod(1100l);
+        beaconManager.setBackgroundBetweenScanPeriod(10000l);
+
+        beaconManager.getBeaconParsers ().add ( new BeaconParser().setBeaconLayout (
+                "m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24" ) );
+        beaconManager.bind(this);
+
+        Log.d(TAG, "onStart End");
+
+        Notification noti = new Notification.Builder(this)
+                .setContentTitle("Started")
+                .setContentText("Here we go")
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .build();
+
+        NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotificationManager.cancel(2);
+        mNotificationManager.notify(1, noti);
+
+
+        return START_STICKY;
+    }
 
     private void postNotification(String room, String action) {
         Intent notificationIntent = new Intent(BeaconMonitoringService.this, Location_fragment.class);

@@ -22,6 +22,7 @@ import com.example.projectbeacon.R;
 import org.altbeacon.beacon.Beacon;
 import org.altbeacon.beacon.BeaconManager;
 import org.altbeacon.beacon.BeaconParser;
+import org.altbeacon.beacon.Identifier;
 import org.altbeacon.beacon.Region;
 import org.altbeacon.beacon.powersave.BackgroundPowerSaver;
 import org.altbeacon.beacon.startup.BootstrapNotifier;
@@ -29,6 +30,7 @@ import org.altbeacon.beacon.startup.RegionBootstrap;
 
 public class ScannerService extends Application implements BootstrapNotifier {
     private static final String TAG = "BeaconReferenceApp";
+    private static final String UUID = "1234567-1234-1234-1234-123456789012";
     private RegionBootstrap regionBootstrap;
     private BackgroundPowerSaver backgroundPowerSaver;
     private boolean haveDetectedBeaconsSinceBoot = false;
@@ -68,7 +70,7 @@ public class ScannerService extends Application implements BootstrapNotifier {
         Notification.Builder builder = new Notification.Builder(this);
         builder.setSmallIcon(R.drawable.beacon_icon);
         builder.setContentTitle("Scanning for Beacons");
-        Intent intent = new Intent(this, Location_fragment.class);
+        Intent intent = new Intent(this, Select_beacon.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(
                 this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(pendingIntent);
@@ -97,6 +99,9 @@ public class ScannerService extends Application implements BootstrapNotifier {
         Region region = new Region("backgroundRegion", null, null, null);
         regionBootstrap = new RegionBootstrap(this, region);
 
+
+//        final Region Room = new Region("mcd1", Identifier.parse(UUID), Identifier.fromInt(1), null);
+//        final Region Kitchen = new Region("mcd2", Identifier.parse(UUID), Identifier.fromInt(2), null);
         //////////
 //        Region region1 = new Region("backgroundRegion1",
 //                Identifier.parse("5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"), null, null);
@@ -152,18 +157,15 @@ public class ScannerService extends Application implements BootstrapNotifier {
         Log.d(TAG, "did enter region.");
         if (!haveDetectedBeaconsSinceBoot) {
             Log.d(TAG, "auto launching MainActivity");
-
+            sendNotification();
             // The very first time since boot that we detect an beacon, we launch the
             // MainActivity
-
-            ////////////////////////////////////////////////
 //            Intent intent = new Intent(this, Select_beacon.class);
 //            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             // Important:  make sure to add android:launchMode="singleInstance" in the manifest
             // to keep multiple copies of this activity from getting created if the user has
             // already manually launched the app.
 //            this.startActivity(intent);
-
             haveDetectedBeaconsSinceBoot = true;
         } else {
             if (select_beacon != null) {
