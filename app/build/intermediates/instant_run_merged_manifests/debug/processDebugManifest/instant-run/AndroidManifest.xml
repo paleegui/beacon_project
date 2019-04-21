@@ -60,7 +60,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.projectbeacon.Activities.GetInput" />
 
         <service android:name="com.example.projectbeacon.Services.BeaconService" />
 

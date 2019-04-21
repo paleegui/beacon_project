@@ -165,6 +165,7 @@
                 android:layout_marginRight="20dp"
                 android:background="@drawable/button_style"
                 android:ems="10"
+                android:fontFamily="@font/sukhumvitset_bold"
                 android:hint="วันเกิด"
                 android:inputType="date|textPersonName"
                 android:textAlignment="center" />
@@ -176,6 +177,7 @@
                 android:layout_marginRight="20dp"
                 android:background="@drawable/button_style"
                 android:ems="10"
+                android:fontFamily="@font/sukhumvitset_bold"
                 android:hint="เดือน"
                 android:inputType="date|textPersonName"
                 android:textAlignment="center" />
@@ -186,6 +188,7 @@
                 android:layout_height="40dp"
                 android:background="@drawable/button_style"
                 android:ems="10"
+                android:fontFamily="@font/sukhumvitset_bold"
                 android:hint="ปี (พ.ศ.)"
                 android:inputType="date|textPersonName"
                 android:textAlignment="center" />

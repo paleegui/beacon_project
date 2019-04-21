@@ -658,7 +658,7 @@
     <string name="title_activity_location">Location</string>
     <string name="title_activity_select_beacon">Select_beacon</string>
     <string name="title_beacon">beacon</string>
-    <string name="title_location">location</string>
+    <string name="title_location">ตำแหน่งของฉัน</string>
     <string name="title_register">สร้างบัญชีผู้ใช้</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

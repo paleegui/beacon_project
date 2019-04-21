@@ -27,7 +27,7 @@
     <string name="build_user">สร้าง</string>
 
     <string name="title_activity_location">Location</string>
-    <string name="title_location">location</string>
+    <string name="title_location">ตำแหน่งของฉัน</string>
     <string name="title_beacon">beacon</string>
     <string name="title_account">ข้อมูลส่วนตัว</string>
 

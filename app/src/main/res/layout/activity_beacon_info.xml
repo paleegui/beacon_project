@@ -9,7 +9,7 @@
     tools:context=".Activities.Beacon_info">
 
     <RelativeLayout
-        android:background="@drawable/background_beacon_info"
+        android:background="@drawable/ic_info"
         android:layout_marginRight="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
@@ -82,10 +82,10 @@
 
                 <ImageView
                     android:id="@+id/icon_UUID"
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
                     android:layout_centerVertical="true"
-                    app:srcCompat="@mipmap/ic_launcher" />
+                    app:srcCompat="@drawable/ic_file" />
 
                 <TextView
                     android:id="@+id/UUID_selectText"
@@ -112,10 +112,10 @@
 
                     <ImageView
                         android:id="@+id/icon_major"
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
                         android:layout_centerVertical="true"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@drawable/ic_minor" />
 
                     <TextView
                         android:id="@+id/major_selectText"
@@ -137,10 +137,10 @@
 
                     <ImageView
                         android:id="@+id/icon_RSSI"
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
                         android:layout_centerVertical="true"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@drawable/ic_signal" />
 
                     <TextView
                         android:id="@+id/RSSI_selectText"
@@ -170,10 +170,10 @@
 
                     <ImageView
                         android:id="@+id/icon_minor"
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
                         android:layout_centerVertical="true"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@drawable/ic_minor" />
 
                     <TextView
                         android:id="@+id/minor_selectText"
@@ -195,10 +195,10 @@
 
                     <ImageView
                         android:id="@+id/icon_TX"
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
                         android:layout_centerVertical="true"
-                        app:srcCompat="@mipmap/ic_launcher" />
+                        app:srcCompat="@drawable/ic_signal" />
 
                     <TextView
                         android:id="@+id/TX_selectText"

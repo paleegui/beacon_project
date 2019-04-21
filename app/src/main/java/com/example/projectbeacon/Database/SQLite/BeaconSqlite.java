@@ -24,6 +24,7 @@ public class BeaconSqlite extends SQLiteOpenHelper {
     private static final String KEY_HOME_NAME = "home_name";
     private static final String KEY_ROOM_ID = "room_id";
 
+
     public BeaconSqlite(Context context){
         super(context,DB_NAME, null, DB_VERSION);
     }
