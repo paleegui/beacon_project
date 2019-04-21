@@ -1,5 +1,7 @@
 package com.example.projectbeacon.Model;
 
+import android.content.SharedPreferences;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -28,6 +30,12 @@ public class User {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+//        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+//        SharedPreferences.Editor editor = prefs.edit();
+//
+//        editor.putString("title", "NULL");
+//        editor.putString("message", "NULL");
+//        editor.putBoolean("isActive", false);
     }
 
     public String getUsername() {

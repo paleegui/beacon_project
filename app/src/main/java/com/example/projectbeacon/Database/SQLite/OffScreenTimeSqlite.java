@@ -8,6 +8,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.projectbeacon.Model.OffScreenTime;
 
+import java.util.ArrayList;
+import java.util.Date;
+
 public class OffScreenTimeSqlite extends SQLiteOpenHelper {
 //    private String username;
 //    private Date time;
@@ -17,6 +20,7 @@ public class OffScreenTimeSqlite extends SQLiteOpenHelper {
     private static final String KEY_ID = "id";
     private static final String KEY_USERNAME = "username";
     private static final String KEY_DATE_MILLIS = "date_millis";
+    private static final String KEY_IS_OFF = "is_off";
 
     public OffScreenTimeSqlite(Context context){
         super(context,DB_NAME, null, DB_VERSION);
@@ -27,7 +31,9 @@ public class OffScreenTimeSqlite extends SQLiteOpenHelper {
         String CREATE_TABLE = "CREATE TABLE " + TABLE_OffSTs + "("
                 + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + KEY_USERNAME + " TEXT,"
-                + KEY_DATE_MILLIS + " INTEGER"+ ")";
+                + KEY_DATE_MILLIS + " INTEGER,"
+                + KEY_IS_OFF + " INTEGER"+ ")";
+
         db.execSQL(CREATE_TABLE);
     }
 
@@ -49,9 +55,31 @@ public class OffScreenTimeSqlite extends SQLiteOpenHelper {
         ContentValues cValues = new ContentValues();
         cValues.put(KEY_USERNAME, time.getUsername());
         cValues.put(KEY_DATE_MILLIS, time.getTimeMillis());
+        cValues.put(KEY_IS_OFF, time.getIsOff());
+
         // Insert the new row, returning the primary key value of the new row
         long newRowId = db.insert(TABLE_OffSTs,null, cValues);
         db.close();
+    }
+
+    // Get offscreentime Details
+    public ArrayList<OffScreenTime> GetDetails(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT username, date_millis, is_off FROM "+ TABLE_OffSTs;
+        Cursor cursor = db.rawQuery(query,null);
+        ArrayList<OffScreenTime> offList = new ArrayList<>();
+        while (cursor.moveToNext()){
+            OffScreenTime o = new OffScreenTime();
+            o.setUsername(cursor.getString(cursor.getColumnIndex(KEY_USERNAME)));
+            o.setTime(new Date(cursor.getLong(cursor.getColumnIndex(KEY_DATE_MILLIS))));
+            if(cursor.getInt(cursor.getColumnIndex(KEY_IS_OFF)) == 1){
+                o.setIsOff(true);
+            }else{
+                o.setIsOff(false);
+            }
+            offList.add(o);
+        }
+        return  offList;
     }
 
     // Get time Details
@@ -66,6 +94,18 @@ public class OffScreenTimeSqlite extends SQLiteOpenHelper {
         return  Long.parseLong(str);
     }
 
+    // Get is off Details
+    public int GetIsOffScreen(String user){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT is_off FROM "+ TABLE_OffSTs +" where username = ?";
+        Cursor cursor = db.rawQuery(query,new String[] {user});
+        int i = 0;
+        while (cursor.moveToNext()){
+            i = cursor.getInt(cursor.getColumnIndex(KEY_IS_OFF));
+        }
+        return  i;
+    }
+
     // Delete time Details
     public void DeleteOffScreenTime(String user){
         SQLiteDatabase db = this.getWritableDatabase();
@@ -73,11 +113,40 @@ public class OffScreenTimeSqlite extends SQLiteOpenHelper {
         db.close();
     }
 
+    public OffScreenTime GetOffScreenTimeDetail(String user){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT username, date_millis, is_off FROM "+ TABLE_OffSTs +" where username = ?";
+        Cursor cursor = db.rawQuery(query,new String[] {user});
+        OffScreenTime offST = new OffScreenTime();
+        while (cursor.moveToNext()){
+            offST.setUsername(cursor.getString(cursor.getColumnIndex(KEY_USERNAME)));
+            offST.setTime(new Date(cursor.getLong(cursor.getColumnIndex(KEY_DATE_MILLIS))));
+            if(cursor.getInt(cursor.getColumnIndex(KEY_IS_OFF)) == 1){
+                offST.setIsOff(true);
+            }else{
+                offST.setIsOff(false);
+
+            }
+        }
+        return  offST;
+    }
+
+    public boolean isContain(String user){
+        OffScreenTime o = GetOffScreenTimeDetail(user);
+        if(o != null){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     // Update time Details
     public int UpdateOffStDetails(OffScreenTime time){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cVals = new ContentValues();
         cVals.put(KEY_DATE_MILLIS, time.getTimeMillis());
+        cVals.put(KEY_IS_OFF, time.getIsOff());
+
         int count = db.update(TABLE_OffSTs, cVals, KEY_USERNAME+" = ?",new String[]{time.getUsername()});
         return  count;
     }

@@ -7,11 +7,12 @@ import java.util.Date;
 public class OffScreenTime {
     private String username;
     private Date time;
+    private boolean isOff;
     private String pattern = "yyyy/MM/dd HH:mm:ss";
 
     public OffScreenTime(){}
 
-    public OffScreenTime(String username, Date time) {
+    public OffScreenTime(String username, Date time, boolean isOff) {
         this.username = username;
         SimpleDateFormat inputFormat = new SimpleDateFormat(pattern);
         Date date = null;
@@ -21,6 +22,7 @@ public class OffScreenTime {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+        this.isOff = isOff;
     }
 
     public String getUsername() {
@@ -45,6 +47,18 @@ public class OffScreenTime {
             e.printStackTrace();
         }
     }
+
+    public void setIsOff(boolean isoff){
+        this.isOff = isoff;
+    }
+    public int getIsOff() {
+        if(isOff){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
 
     public long getTimeMillis(){
         long millis = this.time.getTime();

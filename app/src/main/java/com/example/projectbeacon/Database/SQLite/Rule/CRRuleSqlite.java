@@ -113,4 +113,22 @@ public class CRRuleSqlite extends SQLiteOpenHelper {
         insertRule(crr);
     }
 
+    public ArrayList<String> getDestinationRoom(String roomType, String timeID){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ArrayList<String> roomTypeList = new ArrayList<>();
+        String query = "SELECT cr_rule_id, time_id, room_type FROM "
+                + TABLE_CRRules+" where time_id = ?";
+        Cursor cursor = db.rawQuery(query,new String[] {timeID});
+        while (cursor.moveToNext()){
+            ChangeRoomRule rule = new ChangeRoomRule();
+            rule.setCr_rule_id(cursor.getString(cursor.getColumnIndex(KEY_RULE_ID)));
+            rule.setTime_id(cursor.getString(cursor.getColumnIndex(KEY_TIME_ID)));
+            rule.setRoom_type(cursor.getString(cursor.getColumnIndex(KEY_ROOM_TYPE)));
+            if(!rule.getRoom_type().equalsIgnoreCase(roomType)){
+                roomTypeList.add(rule.getRoom_type());
+            }
+        }
+        return  roomTypeList;
+    }
+
 }

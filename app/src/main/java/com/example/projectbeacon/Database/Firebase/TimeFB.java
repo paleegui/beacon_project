@@ -58,7 +58,7 @@ public class TimeFB {
 
             }
 
-            Time t = new Time("T10","25:00","25:00");
+            Time t = new Time("T9","25:00","25:00");
             db.collection("times").document(t.getTime_id()).set(t);
 
         }

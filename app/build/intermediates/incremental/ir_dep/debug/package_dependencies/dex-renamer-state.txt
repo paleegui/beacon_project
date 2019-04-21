@@ -1,7 +1,7 @@
-#Sun Apr 21 00:47:57 ICT 2019
-base.0=/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/transforms/dexMerger/debug/10
+#Sun Apr 21 17:15:50 ICT 2019
+base.0=C\:\\Users\\NOEY\\Documents\\GitHub\\FinalProject\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
 path.1=classes2.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/transforms/dexMerger/debug/10
+base.1=C\:\\Users\\NOEY\\Documents\\GitHub\\FinalProject\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10

@@ -174,4 +174,30 @@ public class CSRuleSqlite extends SQLiteOpenHelper {
 
     }
 
+    public boolean getCanSleep(final String roomType, String timeID){
+//        room_type;
+//        time_id;
+        final boolean[] canSleep = {false};
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "SELECT cs_rule_id, room_type, time_id, canSleep FROM "
+                + TABLE_CSRules +" where time_id = ?";
+        Cursor cursor = db.rawQuery(query,new String[] {timeID});
+        while (cursor.moveToNext()){
+            CanSleepRule rule = new CanSleepRule();
+            rule.setCs_rule(cursor.getString(cursor.getColumnIndex(KEY_RULE_ID)));
+            rule.setRoom_type(cursor.getString(cursor.getColumnIndex(KEY_ROOM_TYPE)));
+            rule.setTime_id(cursor.getString(cursor.getColumnIndex(KEY_TIME_ID)));
+            if(Integer.parseInt(cursor.getString(cursor.getColumnIndex(KEY_CAN_SLEEP))) == 1){
+                rule.setCanSleep(true);
+            }else{
+                rule.setCanSleep(false);
+            }
+            if(rule.getRoom_type().equalsIgnoreCase(roomType)){
+                canSleep[0] = rule.isCanSleep() == 1 ? true:false;
+            }
+        }
+        return canSleep[0];
+    }
+
+
 }

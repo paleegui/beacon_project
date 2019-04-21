@@ -1,5 +1,15 @@
 package com.example.projectbeacon.Model;
 
+import android.content.Context;
+
+import com.example.projectbeacon.Activities.MainActivity;
+import com.example.projectbeacon.Database.SQLite.BeaconSqlite;
+import com.example.projectbeacon.Database.SQLite.BehaviorSqlite;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+
 public class Behavior {
     private String behavior_id;
     private String username;
@@ -10,6 +20,7 @@ public class Behavior {
     private boolean dol;
     private int freq;
     private boolean isSleep;
+    private String pattern = "yyyy/MM/dd HH:mm:ss";
 
     public Behavior(){}
 
@@ -53,6 +64,11 @@ public class Behavior {
     }
 
     public int isLastActive() {
+        Date currentTime = Calendar.getInstance().getTime();
+//        BehaviorSqlite behaviorSqlite = new BehaviorSqlite();
+//        ArrayList<Behavior> behList =
+//
+
         if(last_active)
             return 1;
         else

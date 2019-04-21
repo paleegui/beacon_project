@@ -17,6 +17,8 @@
         android:name="android.permission.BLUETOOTH_ADMIN"
         android:required="false" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14" /> -->
@@ -24,7 +26,6 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:name="com.example.projectbeacon.Services.BeaconNotification"
@@ -59,6 +60,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.projectbeacon.Activities.GetInput" />
 
         <service android:name="com.example.projectbeacon.Services.BeaconService" />
 
@@ -74,6 +76,16 @@
             </intent-filter>
         </receiver>
 
+        <service
+            android:name="com.example.projectbeacon.Services.ScreenLockService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true" />
+        <service
+            android:name="com.example.projectbeacon.Services.NotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true" />
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
             android:exported="false" >

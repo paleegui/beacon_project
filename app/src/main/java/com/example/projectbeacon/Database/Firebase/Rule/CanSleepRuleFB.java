@@ -3,7 +3,13 @@ package com.example.projectbeacon.Database.Firebase.Rule;
 import android.util.Log;
 
 import com.example.projectbeacon.Model.Rule.CanSleepRule;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import androidx.annotation.NonNull;
 
 public class CanSleepRuleFB {
     private String TAG = "TEST";
@@ -95,5 +101,29 @@ public class CanSleepRuleFB {
             db.collection("canSleepRules").document(csr.getCs_rule()).set(csr);
             cnt++;
         }
+    }
+
+    public boolean getCanSleep(final String roomType, String timeID){
+//        room_type;
+//        time_id;
+        final boolean[] canSleep = {false};
+        db.collection("canSleepRules")
+                .whereEqualTo("time_id", timeID)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (DocumentSnapshot document : task.getResult()) {
+                                CanSleepRule c = document.toObject(CanSleepRule.class);
+                                if(c.getRoom_type().equalsIgnoreCase(roomType)){
+                                    canSleep[0] = c.isCanSleep() == 1? true:false;
+                                    Log.d(TAG, c.getCs_rule());
+                                }
+                            }
+                        }
+                    }
+                });
+        return canSleep[0];
     }
 }

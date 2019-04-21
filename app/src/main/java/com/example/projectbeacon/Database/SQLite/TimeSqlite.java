@@ -80,7 +80,7 @@ public class TimeSqlite extends SQLiteOpenHelper {
 
             }
             ContentValues cValues = new ContentValues();
-            cValues.put(KEY_TIME_ID, "T10");
+            cValues.put(KEY_TIME_ID, "T9");
             cValues.put(KEY_TIME_FROM, "25:00");
             cValues.put(KEY_TIME_TO, "25:00");
             long newRowId = db.insert(TABLE_Times,null, cValues);
@@ -102,6 +102,26 @@ public class TimeSqlite extends SQLiteOpenHelper {
             timeList.add(t);
         }
         return  timeList;
+    }
+
+    // Get time Details
+    public Time GetTime(String timeID){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Time timeList[] = new Time[1];
+        String query = "SELECT time_id, from_time, to_time FROM "
+                + TABLE_Times +" where time_id = ?";
+        Cursor cursor = db.rawQuery(query,new String[] {timeID});
+        while (cursor.moveToNext()){
+            Time t = new Time();
+            t.setTime_id(cursor.getString(cursor.getColumnIndex(KEY_TIME_ID)));
+            t.setFrom_time(cursor.getString(cursor.getColumnIndex(KEY_TIME_FROM)));
+            t.setTo_time(cursor.getString(cursor.getColumnIndex(KEY_TIME_TO)));
+
+            if(t.getTime_id().equalsIgnoreCase(timeID)){
+                timeList[0] = t;
+            }
+        }
+        return  timeList[0];
     }
 
     // Delete Time Details

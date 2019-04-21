@@ -1106,6 +1106,7 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_backward
+drawable ic_chat_bubble_outline_green_24dp
 drawable ic_dashboard_black_24dp
 drawable ic_delete
 drawable ic_edite
@@ -1418,6 +1419,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id textView12
 id textView13
 id textView2
@@ -1533,6 +1535,7 @@ layout activity_add_beacon
 layout activity_beacon_info
 layout activity_clinomania_login
 layout activity_clinomania_login_1
+layout activity_get_input
 layout activity_main
 layout activity_main_navigation
 layout activity_select_beacon

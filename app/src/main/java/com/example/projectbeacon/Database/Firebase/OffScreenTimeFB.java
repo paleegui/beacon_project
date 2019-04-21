@@ -70,4 +70,26 @@ public class OffScreenTimeFB {
         return d.get(0);
     }
 
+    public int getIsOffScreen (final String username){
+        Log.d(TAG, "getOffScreenTime(final String username)");
+        final ArrayList<Integer> d = new ArrayList<>();
+        db.collection("offScreenTimes")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (DocumentSnapshot document : task.getResult()) {
+                                OffScreenTime ost = document.toObject(OffScreenTime.class);
+                                if(ost.getUsername().equals(username)){
+                                    d.add(ost.getIsOff()) ;
+                                }
+                                Log.d(TAG, ""+d.get(0));
+                            }
+                        }
+                    }
+                });
+        return d.get(0);
+    }
+
 }
