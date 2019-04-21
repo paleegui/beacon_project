@@ -70,9 +70,4 @@ public class Activity {
         this.act_state = act_state;
     }
 
-//    public void addToFirebase(){
-//        FirebaseFirestore db = FirebaseFirestore.getInstance();
-//        Activity acc = new Activity(act_no, username, act_name, time_set, act_desc, act_state );
-//        db.collection("activitys").document("LA").set(city);
-//    }
 }

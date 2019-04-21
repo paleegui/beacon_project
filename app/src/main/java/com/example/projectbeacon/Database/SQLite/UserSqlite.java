@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.firebaseproject.model.User;
+import com.example.projectbeacon.Model.User;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.firebaseproject.model.EnterRoomTime;
+import com.example.projectbeacon.Model.EnterRoomTime;
 
 public class EnterRoomTimeSqlite extends SQLiteOpenHelper {
 //    private String username;

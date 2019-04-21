@@ -1,6 +1,6 @@
 package com.example.projectbeacon.Database.Firebase;
 
-import com.example.firebaseproject.model.Time;
+import com.example.projectbeacon.Model.Time;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.SimpleDateFormat;

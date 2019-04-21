@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.firebaseproject.model.OffScreenTime;
+import com.example.projectbeacon.Model.OffScreenTime;
 
 public class OffScreenTimeSqlite extends SQLiteOpenHelper {
 //    private String username;

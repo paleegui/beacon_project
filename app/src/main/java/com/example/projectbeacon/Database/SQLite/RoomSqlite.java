@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.firebaseproject.model.Room;
+import com.example.projectbeacon.Model.Room;
 
 import java.util.ArrayList;
 import java.util.HashMap;

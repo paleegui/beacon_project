@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.firebaseproject.model.Activity;
+import com.example.projectbeacon.Model.Activity;
 
 import java.util.ArrayList;
 
