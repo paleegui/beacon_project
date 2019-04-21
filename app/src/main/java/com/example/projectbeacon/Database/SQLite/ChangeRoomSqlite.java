@@ -6,8 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.firebaseproject.model.ChangeRoom;
-import com.example.firebaseproject.rule.ChangeRoomRule;
+import com.example.projectbeacon.Model.ChangeRoom;
+import com.example.projectbeacon.Model.Rule.ChangeRoomRule;
 
 import java.util.ArrayList;
 import java.util.HashMap;

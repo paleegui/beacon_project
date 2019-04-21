@@ -1,9 +1,8 @@
 package com.example.projectbeacon.Database.Firebase;
 
-import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.example.firebaseproject.model.OffScreenTime;
+import com.example.projectbeacon.Model.OffScreenTime;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -12,6 +11,8 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.Date;
+
+import androidx.annotation.NonNull;
 
 public class OffScreenTimeFB {
     FirebaseFirestore db;

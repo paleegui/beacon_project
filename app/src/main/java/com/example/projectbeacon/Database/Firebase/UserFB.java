@@ -1,6 +1,6 @@
 package com.example.projectbeacon.Database.Firebase;
 
-import com.example.firebaseproject.model.User;
+import com.example.projectbeacon.Model.User;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class UserFB {
