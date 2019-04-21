@@ -4,12 +4,13 @@ import android.app.Notification;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
-import android.support.v4.app.NotificationCompat;
 
-import com.example.firebaseproject.R;
+import com.example.projectbeacon.R;
 
-import static com.example.firebaseproject.activity.noti.App.CHANNEL_ID;
+import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
+
+import static com.example.projectbeacon.Services.App.CHANNEL_ID;
 
 public class NotificationService extends Service {
 

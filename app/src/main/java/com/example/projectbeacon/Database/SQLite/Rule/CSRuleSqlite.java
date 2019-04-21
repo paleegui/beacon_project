@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.firebaseproject.rule.CanSleepRule;
+import com.example.projectbeacon.Model.Rule.CanSleepRule;
 
 import java.util.ArrayList;
 

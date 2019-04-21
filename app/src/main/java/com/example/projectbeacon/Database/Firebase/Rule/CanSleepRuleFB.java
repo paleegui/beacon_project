@@ -2,7 +2,7 @@ package com.example.projectbeacon.Database.Firebase.Rule;
 
 import android.util.Log;
 
-import com.example.firebaseproject.rule.CanSleepRule;
+import com.example.projectbeacon.Model.Rule.CanSleepRule;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class CanSleepRuleFB {
