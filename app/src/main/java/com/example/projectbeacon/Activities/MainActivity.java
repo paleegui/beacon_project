@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     //start a new activity
                     startActivity(new Intent(MainActivity.this, Main_navigation.class));
                 }
-            }, 3000); // 1 second.
+            }, 3000); // 3 second.
         }
 
     }

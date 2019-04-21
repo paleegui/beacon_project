@@ -69,7 +69,6 @@ public class AddBeacon extends AppCompatActivity {
 
 
 
-
     }
     public  void tapClick(){
        // Typeface typeface = Typeface.createFromAsset(, "font/sukhumvitset_text.ttf");

@@ -1,6 +1,8 @@
 package com.example.projectbeacon.Activities;
 
 import androidx.annotation.NonNull;
+
+import com.example.projectbeacon.Services.BeaconMonitoringService;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -9,7 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -34,11 +38,14 @@ public class Main_navigation extends AppCompatActivity {
     private ListBeacon_fragment listBeacon_fragment;
     private Location_fragment location_fragment;
 
+    private BeaconManager beaconManager = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_navigation);
         verifyBluetooth(); //------> Verify Bluetooth
+
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             // Android M Permission check
@@ -61,7 +68,7 @@ public class Main_navigation extends AppCompatActivity {
             }
         }
 
-
+        requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},1234);
 
         mMainFrame = (FrameLayout) findViewById(R.id.main_frame);
         mMainNav = (BottomNavigationView) findViewById(R.id.main_nav);
@@ -75,17 +82,21 @@ public class Main_navigation extends AppCompatActivity {
 
                 switch (menuItem.getItemId()){
                     case R.id.nav_location :
-                        mMainNav.setItemBackgroundResource(R.color.colorPrimary);
+
+//                        beaconManager = BeaconManager.getInstanceForApplication(getApplicationContext());
+//                        startService(new Intent(getApplicationContext(), BeaconMonitoringService.class));
+//                        Log.d(TAG, "MoniterService Start");
+                        mMainNav.setItemBackgroundResource(R.color.color_bathroom);
                         setFragment(location_fragment);
                         return true;
 
                     case R.id.nav_beacon :
-                        mMainNav.setItemBackgroundResource(R.color.colorAccent);
+                        mMainNav.setItemBackgroundResource(R.color.color_bathroom);
                         setFragment(listBeacon_fragment);
                         return true;
 
                     case R.id.nav_account :
-                        mMainNav.setItemBackgroundResource(R.color.colorPrimaryDark);
+                        mMainNav.setItemBackgroundResource(R.color.color_bathroom);
                         return true;
 
                         default:

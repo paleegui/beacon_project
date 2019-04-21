@@ -1221,6 +1221,7 @@ id coordinator
 id custom
 id customPanel
 id dark
+id date_location
 id day
 id decor_content_parent
 id default_activity_button
@@ -1275,6 +1276,7 @@ id homeAsUp
 id homeNameInfo
 id home_icon
 id home_name
+id hours_location
 id icon
 id icon_RSSI
 id icon_TX
@@ -1313,6 +1315,7 @@ id masked
 id media_actions
 id message
 id middle
+id min_location
 id mini
 id minor_selectText
 id month
@@ -1417,11 +1420,6 @@ id textSpacerNoTitle
 id textStart
 id textView12
 id textView13
-id textView14
-id textView15
-id textView16
-id textView17
-id textView18
 id textView2
 id textView3
 id textView5
@@ -1433,6 +1431,8 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id time
+id time_location
+id titile_Room_location
 id title
 id titleDividerNoCustom
 id title_Floor_addBeacon

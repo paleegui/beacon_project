@@ -55,22 +55,44 @@ public class Select_beacon extends AppCompatActivity implements BeaconConsumer {
                 beaconList = (ArrayList<Beacon>) beacons;
                 if (beacons.size() > 0) {
                     for(Beacon beacon :beacons){
-                        Log.d("Test","The Beacon "+beacon.toString()+ "is about:" + beacon.getDistance());
-                        Log.d("Test11",""+beacon.getBluetoothAddress());
+                        Log.d("Test1111", "id1:"+beacon.getId1()+" ");
+                        Log.d("Test1111", "id2:"+beacon.getId2()+" ");
+                        Log.d("Test1111", "id3:"+beacon.getId3()+" ");
+                        Log.d("Test1111", "id4:"+beacon.getParserIdentifier()+" ");
                     }
                     Log.d("Test","----------------------------------------------------");
                 }
 
-                recycleViewAdapter_select = new RecycleViewAdapter_Select(getApplicationContext(),beaconList);
-                recyclerView.setAdapter(recycleViewAdapter_select);
-                recycleViewAdapter_select.notifyDataSetChanged();
+                try {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            // Setting Up the Adapter for Recycler View
+                            recycleViewAdapter_select = new RecycleViewAdapter_Select(getApplicationContext(),beaconList);
+                            recyclerView.setAdapter(recycleViewAdapter_select);
+                            recycleViewAdapter_select.notifyDataSetChanged();
+                        }
+                    });
+                }catch(Exception e){
+
+                }
             }
         };
 
         try {
-            beaconManager.startRangingBeaconsInRegion(new Region("MyUUID",null, null, null));
+            Region region = new Region("MyUUID",null, null, null);
+            beaconManager.startRangingBeaconsInRegion(region);
             beaconManager.addRangeNotifier(rangeNotifier);
+            beaconManager.startMonitoringBeaconsInRegion(region);
         } catch (RemoteException e) {   }
 
+    }
+
+    // Override onDestroy Method
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        //Unbinds an Android Activity or Service to the BeaconService to avoid leak.
+        beaconManager.unbind(this);
     }
 }

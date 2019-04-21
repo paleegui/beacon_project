@@ -5,7 +5,7 @@
     build-mode="FULL"
     format="10"
     plugin-version="3.3.2"
-    timestamp="1555573539020"
+    timestamp="1555829283989"
     token="4128897913699527290"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -44,10 +44,10 @@
         location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
         type="SPLIT" />
     <artifact
         location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
@@ -64,7 +64,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1555573539020"
+        timestamp="1555829283989"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
@@ -88,10 +88,10 @@
             location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_8.apk"

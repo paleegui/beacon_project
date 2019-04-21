@@ -11,6 +11,7 @@ import android.os.RemoteException;
 import android.util.Log;
 
 import com.example.projectbeacon.Activities.MainActivity;
+import com.example.projectbeacon.Activities.Main_navigation;
 import com.example.projectbeacon.Activities.Select_beacon;
 import com.example.projectbeacon.Activities.fragment.Location_fragment;
 import com.example.projectbeacon.R;
@@ -31,6 +32,7 @@ public class BeaconMonitoringService extends Service implements BeaconConsumer {
     private static final Region Room = new Region("mcd1", Identifier.parse(UUID), Identifier.fromInt(1), null);
     private static final Region Kitchen = new Region("mcd2", Identifier.parse(UUID), Identifier.fromInt(2), null);
     private BeaconManager beaconManager;
+
 
     @Nullable
     @Override
@@ -96,10 +98,8 @@ public class BeaconMonitoringService extends Service implements BeaconConsumer {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d(TAG, "onStart Start");
+        beaconManager = org.altbeacon.beacon.BeaconManager.getInstanceForApplication(this);
 
-        Location_fragment app = (Location_fragment) getApplication();
-
-        beaconManager = getApplicationContext()
         beaconManager.setBackgroundScanPeriod(1100l);
         beaconManager.setBackgroundBetweenScanPeriod(10000l);
 
@@ -124,7 +124,7 @@ public class BeaconMonitoringService extends Service implements BeaconConsumer {
     }
 
     private void postNotification(String room, String action) {
-        Intent notificationIntent = new Intent(BeaconMonitoringService.this, Location_fragment.class);
+        Intent notificationIntent = new Intent(BeaconMonitoringService.this, Main_navigation.class);
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
                 | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent intent = PendingIntent.getActivity(BeaconMonitoringService.this, 0,

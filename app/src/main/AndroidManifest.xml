@@ -8,8 +8,10 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
     <application
-        android:name=".Services.ScannerService"
+        android:name=".Services.BeaconNotification"
         android:allowBackup="true"
         android:appComponentFactory="anystrings be placeholder"
         android:icon="@mipmap/ic_launcher"
@@ -19,6 +21,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
+
+
         <activity android:name=".Activities.Beacon_info"></activity>
         <activity android:name=".Activities.AddBeacon" />
         <activity
@@ -40,6 +44,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".Services.BeaconService"/>
+        <receiver android:name=".Services.BeaconBroadCast"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="com.example.anmol.beacons.RestartBeaconService"></action>
+                <action android:name="android.intent.action.BATTERY_CHANGED"></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

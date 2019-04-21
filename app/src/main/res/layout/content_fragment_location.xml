@@ -8,7 +8,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/titile_Room_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -21,44 +21,44 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/date_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/sukhumvitset_bold"
         android:text="วันจันทร์ 16 2562"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintStart_toStartOf="@+id/titile_Room_location"
+        app:layout_constraintTop_toBottomOf="@+id/titile_Room_location" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/time_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/sukhumvitset_bold"
         android:text="5:45"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintStart_toStartOf="@+id/date_location"
+        app:layout_constraintTop_toBottomOf="@+id/date_location" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/hours_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/sukhumvitset_bold"
         android:text="2 ชั่วโมง"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/titile_Room_location"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/min_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/sukhumvitset_bold"
         android:text="30 นาที"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintEnd_toEndOf="@+id/hours_location"
+        app:layout_constraintTop_toBottomOf="@+id/hours_location" />
 </androidx.constraintlayout.widget.ConstraintLayout>

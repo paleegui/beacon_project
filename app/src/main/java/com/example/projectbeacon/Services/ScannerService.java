@@ -10,10 +10,12 @@ import android.content.Context;
 import android.content.Intent;
 
 import androidx.core.app.NotificationCompat;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import android.os.Build;
 import android.util.Log;
 
+import com.example.projectbeacon.Activities.Main_navigation;
 import com.example.projectbeacon.Activities.Select_beacon;
 import com.example.projectbeacon.Activities.fragment.ListBeacon_fragment;
 import com.example.projectbeacon.Activities.fragment.Location_fragment;
@@ -27,6 +29,8 @@ import org.altbeacon.beacon.Region;
 import org.altbeacon.beacon.powersave.BackgroundPowerSaver;
 import org.altbeacon.beacon.startup.BootstrapNotifier;
 import org.altbeacon.beacon.startup.RegionBootstrap;
+
+import java.util.ArrayList;
 
 public class ScannerService extends Application implements BootstrapNotifier {
     private static final String TAG = "BeaconReferenceApp";
@@ -103,10 +107,10 @@ public class ScannerService extends Application implements BootstrapNotifier {
 //        final Region Room = new Region("mcd1", Identifier.parse(UUID), Identifier.fromInt(1), null);
 //        final Region Kitchen = new Region("mcd2", Identifier.parse(UUID), Identifier.fromInt(2), null);
         //////////
-//        Region region1 = new Region("backgroundRegion1",
-//                Identifier.parse("5A4BCFCE-174E-4BAC-A814-092E77F6B7E5"), null, null);
-//        Region region2 = new Region("backgroundRegion2",
-//                Identifier.parse("74278BDA-B644-4520-8F0C-720EAF059935"), null, null);
+//        Region region1 = new Region("room1",
+//                Identifier.parse(UUID),Identifier.fromInt(1) , null);
+//        Region region2 = new Region("room2",
+//                Identifier.parse(UUID), Identifier.fromInt(2), null);
 //        ArrayList<Region> regions = new ArrayList<Region>();
 //        regions.add(region1);
 //        regions.add(region2);
@@ -148,7 +152,6 @@ public class ScannerService extends Application implements BootstrapNotifier {
                 null, null, null);
         regionBootstrap = new RegionBootstrap(this, region);
     }
-
 
     @Override
     public void didEnterRegion(Region arg0) {
@@ -229,5 +232,30 @@ public class ScannerService extends Application implements BootstrapNotifier {
         return cumulativeLog;
     }
 
+    private void postNotification(String room, String action) {
+        Intent notificationIntent = new Intent(ScannerService.this, Main_navigation.class);
+        notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
+                | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        PendingIntent intent = PendingIntent.getActivity(ScannerService.this, 0,
+                notificationIntent, 0);
+
+        Notification noti = new Notification.Builder(ScannerService.this)
+                .setContentTitle(room)
+                .setContentText(action)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentIntent(intent)
+                .build();
+
+
+        NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotificationManager.cancel(2);
+        mNotificationManager.notify(1, noti);
+    }
+
+    private void intent (String code){
+        Intent intent = new Intent("statechanged");
+        intent.putExtra("info", code);
+        LocalBroadcastManager.getInstance(ScannerService.this).sendBroadcast(intent);
+    }
 
 }
