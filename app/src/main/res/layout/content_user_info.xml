@@ -77,7 +77,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="16dp"
-                android:text="UserName"
+                android:text="Rattapong"
                 android:textColor="@color/grayText" />
         </RelativeLayout>
     </LinearLayout>
@@ -125,7 +125,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="16dp"
-                android:text="UserName"
+                android:text="08XXXXXX45"
                 android:textColor="@color/grayText" />
         </RelativeLayout>
 
@@ -167,6 +167,15 @@
                 android:fontFamily="@font/sukhumvitset_text"
                 android:text="@string/security_userInfo"
                 android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:tint="@color/grayText"
+                app:srcCompat="@drawable/ic_next" />
         </RelativeLayout>
     </LinearLayout>
 
