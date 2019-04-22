@@ -46,18 +46,4 @@
 
     <string name="addBeacon">เพิ่มบีคอน</string>
 
-
-
-    <!--User info layout-->
-    <string name="profile_title">โปรไฟล์</string>
-    <string name="profile_pic">รูปโปรไฟล์</string>
-
-    <string name="title_persernal">ข้อมูลส่วนบุคคล</string>
-    <string name="name_userInfo">ชื่อ</string>
-    <string name="title_phoneANDemail">หมายเลขโทรศัพท์และอีเมล</string>
-    <string name="phone_userInfo">หมายเลขโทรศัพท์</string>
-    <string name="email_userInfo">อีเมล</string>
-    <string name="security_userInfo">ความปลอดภัย</string>
-
-
 </resources>

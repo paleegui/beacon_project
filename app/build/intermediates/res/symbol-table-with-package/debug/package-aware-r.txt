@@ -1315,8 +1315,6 @@ id left
 id light
 id line1
 id line3
-id linearLayout
-id linearLayout2
 id listMode
 id list_item
 id loginParent
@@ -1437,7 +1435,6 @@ id textView12
 id textView13
 id textView2
 id textView3
-id textView4
 id textView5
 id textView6
 id textView8
@@ -1456,7 +1453,6 @@ id title_Room_addBeacon
 id title_create_user
 id title_home_addBeacon
 id title_name_addbeacon
-id title_phoneANDemail
 id title_select_beacon
 id title_template
 id toolbar
@@ -1560,7 +1556,6 @@ layout content_fragment_list_beacon
 layout content_fragment_location
 layout content_list_beacon
 layout content_select_beacon
-layout content_user_info
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1581,7 +1576,6 @@ layout fragment_location_fragment
 layout fragment_show_all__beacon_list
 layout fragment_show_floor__beacon_list
 layout fragment_show_room__beacon_list
-layout fragment_user_info
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1671,7 +1665,6 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string create_name
-string email_userInfo
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
@@ -1692,21 +1685,16 @@ string home_AddBeacon_Text
 string login_button
 string mtrl_chip_close_icon_content_description
 string name_AddBeacon_Text
-string name_userInfo
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string phone_userInfo
-string profile_pic
-string profile_title
 string project_id
 string register
 string register_button
 string room_AddBeacon_Text
 string search_menu_title
-string security_userInfo
 string semi_title1
 string semi_title2
 string semi_title_register
@@ -1719,8 +1707,6 @@ string title_activity_location
 string title_activity_select_beacon
 string title_beacon
 string title_location
-string title_persernal
-string title_phoneANDemail
 string title_register
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
