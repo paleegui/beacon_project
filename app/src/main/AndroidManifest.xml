@@ -7,11 +7,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:name=".Services.BeaconNotification"
@@ -24,8 +22,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
-
-        <activity android:name=".Activities.Beacon_info"/>
+        <activity android:name=".Activities.fragment.in_userInfo.Securiry_userInfo"></activity>
+        <activity android:name=".Activities.Beacon_info" />
         <activity android:name=".Activities.AddBeacon" />
         <activity
             android:name=".Activities.Select_beacon"
@@ -47,29 +45,30 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".Services.BeaconService"/>
-        <receiver android:name=".Services.BeaconBroadCast"
+        <service android:name=".Services.BeaconService" />
+
+        <receiver
+            android:name=".Services.BeaconBroadCast"
             android:enabled="true"
             android:exported="true"
             android:label="RestartServiceWhenStopped">
             <intent-filter>
-                <action android:name="com.example.anmol.beacons.RestartBeaconService"></action>
-                <action android:name="android.intent.action.BATTERY_CHANGED"></action>
-                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <action android:name="com.example.anmol.beacons.RestartBeaconService" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
         <service
-            android:enabled="true"
             android:name=".Services.ScreenLockService"
-            android:exported="false"
-            android:stopWithTask="true"/>
-        <service
             android:enabled="true"
-            android:name=".Services.NotificationService"
             android:exported="false"
-            android:stopWithTask="true"/>
-
+            android:stopWithTask="true" />
+        <service
+            android:name=".Services.NotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="true" />
     </application>
 
 </manifest>

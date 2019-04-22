@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_Bluesky"
+    tools:context=".Activities.fragment.in_userInfo.Securiry_userInfo">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="64dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/pic_security_userInfo"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_user_info"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/pic_security_userInfo"
+                android:fontFamily="@font/sukhumvitset_medium"
+                android:text="User Name"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="58dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/sukhumvitset_medium"
+                android:text="ข้อมูลพื้นฐาน"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="48dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="48dp"
+                            android:layout_height="37dp"
+                            android:tint="@color/icon_securityUserInfo"
+                            android:src="@drawable/ic_lock_user"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16dp"
+                            android:fontFamily="@font/sukhumvitset_medium"
+                            android:text="รหัสผ่าน"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sukhumvitset_medium"
+                            android:text="เปลี่ยน"
+                            android:textColor="@color/grayText"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="18dp"
+                            android:layout_height="34dp"
+                            android:tint="@color/grayText"
+                            android:src="@drawable/ic_next"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--/////////////////////////////////////////////////////////////////////////-->
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_line_black"/>
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="48dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="48dp"
+                            android:layout_height="37dp"
+                            android:tint="@color/icon_securityUserInfo"
+                            android:src="@drawable/ic_email"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16dp"
+                            android:fontFamily="@font/sukhumvitset_medium"
+                            android:text="อีเมล"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sukhumvitset_medium"
+                            android:text="เปลี่ยน"
+                            android:textColor="@color/grayText"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="18dp"
+                            android:layout_height="34dp"
+                            android:tint="@color/grayText"
+                            android:src="@drawable/ic_next"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--////////////////////////////////////////////////////////////////////////////-->
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_line_black"/>
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="48dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="48dp"
+                            android:layout_height="37dp"
+                            android:tint="@color/icon_securityUserInfo"
+                            android:src="@drawable/ic_phone"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16dp"
+                            android:fontFamily="@font/sukhumvitset_medium"
+                            android:text="หมายเลขโทรศัพท์"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sukhumvitset_medium"
+                            android:text="เปลี่ยน"
+                            android:textColor="@color/grayText"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="18dp"
+                            android:layout_height="34dp"
+                            android:tint="@color/grayText"
+                            android:src="@drawable/ic_next"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <!--/////////////////////////////////////////////////////////////////-->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/sukhumvitset_medium"
+        android:text="ลงชื่อออก" />
+</RelativeLayout>

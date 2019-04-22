@@ -19,5 +19,6 @@
     <color name="working_room">#000000</color>
 
     <color name="grayText">#979797</color>
+    <color name="icon_securityUserInfo">#707070</color>
 
 </resources>
