@@ -18,4 +18,6 @@
     <color name="bed_room">#ED982E</color>
     <color name="working_room">#000000</color>
 
+    <color name="grayText">#979797</color>
+
 </resources>

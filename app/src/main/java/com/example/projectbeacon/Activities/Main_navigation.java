@@ -2,6 +2,7 @@ package com.example.projectbeacon.Activities;
 
 import androidx.annotation.NonNull;
 
+import com.example.projectbeacon.Activities.fragment.User_info;
 import com.example.projectbeacon.Services.BeaconMonitoringService;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.fragment.app.Fragment;
@@ -37,6 +38,7 @@ public class Main_navigation extends AppCompatActivity {
 
     private ListBeacon_fragment listBeacon_fragment;
     private Location_fragment location_fragment;
+    private User_info user_info;
 
     private BeaconManager beaconManager = null;
 
@@ -75,6 +77,7 @@ public class Main_navigation extends AppCompatActivity {
 
         listBeacon_fragment = new ListBeacon_fragment();
         location_fragment = new Location_fragment();
+        user_info = new User_info();
 
         mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -86,17 +89,18 @@ public class Main_navigation extends AppCompatActivity {
 //                        beaconManager = BeaconManager.getInstanceForApplication(getApplicationContext());
 //                        startService(new Intent(getApplicationContext(), BeaconMonitoringService.class));
 //                        Log.d(TAG, "MoniterService Start");
-                        mMainNav.setItemBackgroundResource(R.color.color_bathroom);
+                        //mMainNav.setItemBackgroundResource(R.color.color_bathroom);
                         setFragment(location_fragment);
                         return true;
 
                     case R.id.nav_beacon :
-                        mMainNav.setItemBackgroundResource(R.color.color_bathroom);
+                       // mMainNav.setItemBackgroundResource(R.color.color_bathroom);
                         setFragment(listBeacon_fragment);
                         return true;
 
                     case R.id.nav_account :
-                        mMainNav.setItemBackgroundResource(R.color.color_bathroom);
+                      //  mMainNav.setItemBackgroundResource(R.color.color_bathroom);
+                        setFragment(user_info);
                         return true;
 
                         default:

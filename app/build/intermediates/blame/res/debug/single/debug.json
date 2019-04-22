@@ -300,6 +300,10 @@
         "source": "/Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.1.aar/fe0f5d1296367ef529bdd05a729e43e1/res/drawable-mdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/res/merged/debug/layout_content_user_info.xml.flat",
+        "source": "/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/res/layout/content_user_info.xml"
+    },
+    {
         "merged": "/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "/Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.1.aar/fe0f5d1296367ef529bdd05a729e43e1/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
@@ -2102,6 +2106,10 @@
     {
         "merged": "/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/ruttapongpaleegui/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.1.aar/fe0f5d1296367ef529bdd05a729e43e1/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/res/merged/debug/layout_fragment_user_info.xml.flat",
+        "source": "/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/src/main/res/layout/fragment_user_info.xml"
     },
     {
         "merged": "/Users/ruttapongpaleegui/Documents/finalProject/FinalProject/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_track_material.xml.flat",
