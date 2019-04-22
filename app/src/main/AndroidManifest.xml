@@ -25,8 +25,7 @@
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
 
-
-        <activity android:name=".Activities.Beacon_info"></activity>
+        <activity android:name=".Activities.Beacon_info"/>
         <activity android:name=".Activities.AddBeacon" />
         <activity
             android:name=".Activities.Select_beacon"
