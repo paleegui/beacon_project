@@ -79,8 +79,6 @@ dependencies {
 
 ## Directory tree
 ```groovy
-Folder PATH listing
-Volume serial number is D8E5-1733
 beacon_project:.
 │   build.gradle
 │   FinalProject-1.iml
