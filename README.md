@@ -24,17 +24,38 @@ You may [download binary releases here.](http://altbeacon.github.io/android-beac
 
 Add JCenter to your build file's list of repositories.
 
+in build.gradle : project
 ```groovy
-repositories {
-    ...
-    jcenter()
-    jcenter()
-    mavenCentral()
-    ...
+buildscript {
+    repositories {
+        ...
+        google()
+        jcenter()
+        mavenCentral()
+        ...
+    }
+    dependencies {
+        ...
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.google.gms:google-services:4.0.1'
+        ...
+    }
+}
+```
+
+```groovy
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven{ url "https://jitpack.io"}
+        maven{ url "https://maven.fabric.io/public"}
+    }
 }
 ```
 
 to use the JCenter Repository
+in build.gradle : app
 
 ```groovy
 dependencies {
@@ -60,8 +81,7 @@ dependencies {
 ```groovy
 Folder PATH listing
 Volume serial number is D8E5-1733
-C:.
-│   ascii.txt
+beacon_project:.
 │   build.gradle
 │   FinalProject-1.iml
 │   gradle.properties
