@@ -87,9 +87,10 @@ file หลักของ project
 - เริ่มต้นที่ MainActivity.java :>> เริ่ม แอปพลิเคชั่น
 - Services เริ่มต้นที่ GlobalApplication.java :>> เริ่ม services 
 
+Firebase Database ได้มาจากการสร้าง Firebase Project ได้ที่ [create Firebase database](https://console.firebase.google.com)
 ```groovy
 project/app – google-service.json
-:>> เก็บข้อมูลที่ใช้ในการติดต่อกับ Firebase Database ได้มาจากการสร้าง Firebase Project ได้ที่ https://console.firebase.google.com สร้าง Android App แล้วทำการติดตั้งตามขั้นตอน แล้วนำไฟล์ google-service.json มาใส่แทนที่ไฟล์เดิม
+:>> เก็บข้อมูลที่ใช้ในการติดต่อกับ Firebase Database สร้าง Android App แล้วทำการติดตั้งตามขั้นตอน แล้วนำไฟล์ google-service.json มาใส่แทนที่ไฟล์เดิม
 
 
 project/app/src/main/java/com.example.projectbeacon/Activities
