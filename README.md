@@ -76,6 +76,85 @@ dependencies {
     ...
 }
 ```
+## File Description
+
+project แบ่งเป็น 2 ส่วนคือ 
+
+- java/com.example.projectbeacon/...  เก็บพวก java code
+- res/layout/... เก็บพวก layout ต่างๆของแอปพลิเคชั่น ค่าของ String ต่างๆ สีที่ใช้ และ ไฟล์ XML ต่างๆ 
+
+file หลักของ project 
+- เริ่มต้นที่ MainActivity.java :>> เริ่ม แอปพลิเคชั่น
+- Services เริ่มต้นที่ GlobalApplication.java :>> เริ่ม services 
+
+```groovy
+project/app – google-service.json
+:>> เก็บข้อมูลที่ใช้ในการติดต่อกับ Firebase Database ได้มาจากการสร้าง Firebase Project ได้ที่ https://console.firebase.google.com สร้าง Android App แล้วทำการติดตั้งตามขั้นตอน แล้วนำไฟล์ google-service.json มาใส่แทนที่ไฟล์เดิม
+
+
+project/app/src/main/java/com.example.projectbeacon/Activities
+:>> เก็บ code เกี่ยวกับ คำสั่งต่างๆที่สัมพันธ์กับ layout ในแอปพลิเคชัน
+
+project/app/src/main/java/com.example.projectbeacon/Activities/abount_user_info
+:>> เก็บ code เกี่ยวกับ คำสั่งต่างๆที่สัมพันธ์กับ layout ในหน้า "ข้อมูลส่วนตัว"
+
+project/app/src/main/java/com.example.projectbeacon/Activities/fragment
+:>> เก็บ code เกี่ยวกับ คำสั่งต่างๆที่สัมพันธ์กับ layout ในหน้าย่อยๆของ layout (layout ใน layout เช่น หน้าต่างที่สามารถสไลด์ไปมาได้)
+
+project/app/src/main/java/com.example.projectbeacon/Activities/login_and_register
+:>> เก็บ code เกี่ยวกับ คำสั่งต่างๆที่สัมพันธ์กับ layout ในขั้นตอนของการลงทะเบียน และ ลงชื่อเข้าใช้งาน
+
+project/app/src/main/java/com.example.projectbeacon/Activities/room_and_beacon
+:>> เก็บ code เกี่ยวกับ คำสั่งต่างๆที่สัมพันธ์กับ layout ในการแสดงห้อง เพิ่มห้อง แสดงบีคอน เพิ่มบีคอน 
+
+project/app/src/main/java/com.example.projectbeacon/Activities/Main_navigation.java
+:>> เก็บ code เกี่ยวกับ bottom navigation "location" ,  "beacon" , "ข้อมูลส่วนตัว"
+
+project/app/src/main/java/com.example.projectbeacon/Activities/Main_navigation.java
+:>> เก็บ code เกี่ยวกับ bottom navigation "location" ,  "beacon" , "ข้อมูลส่วนตัว"
+
+project/app/src/main/java/com.example.projectbeacon/UI/...
+:>> เก็บ code เกี่ยวกับ recycleView ช่วยในการแสดงผลเป็นลิสข้อมูลออกมา (แสดงลิสห้อง, แสดงลิสบีคอน)
+
+project/app/src/main/java/com.example.projectbeacon/TheBeacon
+:>> เก็บ code เกี่ยวกับ โมเดลของบีคอน (เพิ่มความสารถให้เก็บข้อมูล ชื่อห้อง หรือ ชื่อผู้ใช้ หรือ ฯลฯ)
+
+project/app/src/main/java/com.example.projectbeacon/Database/...
+:>> เก็บ code เกี่ยวกับ SQLite Database
+
+project/app/src/main/java/com.example.projectbeacon/Model
+:>> โฟลเดอร์เก็บไฟล์โมเดล
+
+project/app/src/main/java/com.example.projectbeacon/Model/Rule
+:>> โฟลเดอร์เก็บไฟล์โมเดลกฎ
+
+project/app/src/main/java/com.example.projectbeacon/Service/backgoundService
+:>> โฟลเดอร์เก็บไฟล์ sevice ที่เรียกใช้ตอนทำ Background Service
+
+project/app/src/main/java/com.example.projectbeacon/Service/backgoundService/AcceleroMeter.java
+:>> เก็บ code ที่ใช้ในการตรวจจับว่าผู้ใช้มีการเคลื่อนไหวหรือไม่ 
+
+project/app/src/main/java/com.example.projectbeacon/Service/backgoundService/Monitoring.java
+:>> เก็บ code ที่ใช้ในการตรวจจับว่าผู้ใช้อยู่กับที่เป็นเวลานานหรือไม่ โดยใช้ข้อมูลจาก accelerometer (การเคลื่อนไหว), soundMeter (เสียง), screenLock (การใช้หน้าจอ) 
+
+project/app/src/main/java/com.example.projectbeacon/Service/backgoundService/NotificationReceiver.java
+:>> เก็บ code ที่ใช้ในการรับข้อมูลจากการปฏิสัมพันธ์กับ notification ของแอป
+
+project/app/src/main/java/com.example.projectbeacon/Service/backgoundService/NotificationService.java
+:>> เก็บ code ที่ใช้ในการเรียกช้ notification ของแอป
+
+project/app/src/main/java/com.example.projectbeacon/Service/backgoundService/ScreenLockReceiver.java
+:>> เก็บ code ที่ใช้ในการรับข้อมูลการใช้หน้าจอ
+
+project/app/src/main/java/com.example.projectbeacon/Service/backgoundService/ScreenLockService.java
+:>> เก็บ code ที่ใช้ในการเรียกใช้ service การใช้หน้าจอ
+
+project/app/src/main/java/com.example.projectbeacon/Service/backgoundService/SoundMeter.java
+:>> เก็บ code ที่ใช้ในการตรวจจับเสียงจากไมโครโฟน
+
+project/app/src/main/java/com.example.projectbeacon/ GlobalApplication.java
+:>> เก็บ code ที่ใช้ในการเรียกใช้ monitoring
+```
 
 ## Directory tree
 ```groovy
